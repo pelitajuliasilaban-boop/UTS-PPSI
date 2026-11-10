@@ -1,0 +1,717 @@
+<!-- Panel Mitra (Homestay & Pemandu) -->
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Taput Wisata Pass - Portal Pengelola &amp; Mitra</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed-variant":"#6c391f","on-error-container":"#93000a","outline":"#6f7978","on-background":"#191c1c","primary-container":"#0f5c5c","secondary-fixed":"#ffdead","on-tertiary-container":"#ffb693","error":"#ba1a1a","on-secondary-container":"#6a4800","surface":"#f8faf9","surface-container-lowest":"#ffffff","tertiary-container":"#7a452a","inverse-primary":"#90d2d1","tertiary":"#5e2f16","surface-variant":"#e1e3e2","on-primary-fixed":"#002020","secondary-fixed-dim":"#ffba3b","on-secondary":"#ffffff","inverse-surface":"#2e3131","outline-variant":"#bfc8c8","on-surface":"#191c1c","primary-fixed":"#aceeee","surface-tint":"#216868","on-primary-fixed-variant":"#004f50","background":"#f8faf9","on-secondary-fixed":"#281900","on-tertiary-fixed":"#351000","primary":"#004343","on-surface-variant":"#3f4948","on-secondary-fixed-variant":"#604100","on-primary-container":"#90d2d1","surface-container":"#eceeed","surface-bright":"#f8faf9","on-primary":"#ffffff","surface-dim":"#d8dada","surface-container-highest":"#e1e3e2","error-container":"#ffdad6","surface-container-high":"#e6e9e8","secondary-container":"#feb316","inverse-on-surface":"#eff1f0","surface-container-low":"#f2f4f3","on-error":"#ffffff","on-tertiary":"#ffffff","secondary":"#7f5700","primary-fixed-dim":"#90d2d1","tertiary-fixed":"#ffdbcc","tertiary-fixed-dim":"#ffb693"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-desktop":"3rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-tablet":"2rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","gutter":"1rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 w-full z-50 bg-primary-container text-on-primary shadow-[0_4px_16px_-2px_rgba(15,92,92,0.18)]"><div class="h-20 max-w-[1120px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0"><span class="material-symbols-outlined text-primary text-[28px]">assured_workload</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-tight leading-tight">Taput Wisata Pass</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase font-medium">Portal Pengelola &amp; Mitra</span></div></div><nav class="hidden lg:flex items-center gap-space-xs bg-primary/40 p-1.5 rounded-xl" data-active-classes="bg-surface-container-lowest text-primary font-semibold shadow-sm"><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-all duration-150 bg-surface-container-lowest text-primary font-semibold shadow-sm" data-path="panel-mitra" href="#">Panel Mitra</a><a class="font-label-lg text-label-lg text-on-primary px-space-md py-space-sm rounded-lg hover:bg-primary-fixed/20 hover:text-on-primary transition-all duration-150" data-path="pengelola-destinasi" href="#">Pengelola Destinasi</a><a class="font-label-lg text-label-lg text-on-primary px-space-md py-space-sm rounded-lg hover:bg-primary-fixed/20 hover:text-on-primary transition-all duration-150" data-path="verifikasi-bantuan" href="#">Verifikasi &amp; Bantuan</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center bg-primary/50 p-1 rounded-lg"><button class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-xs" type="button">ID</button><button class="px-2.5 py-1 rounded text-on-primary-container hover:text-on-primary font-label-sm text-label-sm font-medium transition-colors" type="button">EN</button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="hidden sm:flex flex-col text-right"><span class="font-label-md text-label-md text-on-primary font-semibold leading-tight">Verifikator Resmi</span><span class="font-label-sm text-label-sm text-secondary-fixed font-medium">Dinas Pariwisata</span></div><div class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-xs shrink-0 ring-2 ring-secondary-container/80"><span class="material-symbols-outlined text-primary text-[20px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="max-w-[1120px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Status Section -->
+<section class="mb-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-xs">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+          Portal Kemitraan
+        </span>
+<span class="text-outline-variant font-label-md text-label-md">/</span>
+<span class="font-label-md text-label-md text-primary font-bold">Dasbor Pengelola Mitra Lokal</span>
+</nav>
+<!-- Preview state switcher for demo -->
+<div class="inline-flex items-center bg-surface-container-high rounded-lg p-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2">Simulasi Status SK:</span>
+<button class="px-space-sm py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-xs hover:bg-primary-fixed/20 transition-all flex items-center gap-1" id="toggleStatusBtn" onclick="toggleVerificationStatus()">
+<span class="material-symbols-outlined text-[14px]">published_with_changes</span>
+          Ganti ke "Menunggu Verifikasi"
+        </button>
+</div>
+</div>
+<!-- Verification Banner Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all duration-300" id="verifiedStatusCard">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 bg-primary text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Status Mitra: Terverifikasi
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2.5 py-1 rounded-full font-medium">
+                SK Dispar: 556/Pariwisata/2026
+              </span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">
+              Homestay Budaya &amp; Pemandu Wisata Pulau Sibandang
+            </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tercatat resmi dalam Sistem Digital Terpadu Dinas Pariwisata Kab. Tapanuli Utara
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+            Audit Validitas: 31 Des 2026
+          </span>
+</div>
+</div>
+</div>
+<!-- Pending Verification Card (Hidden initially) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all duration-300" id="pendingStatusCard">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[28px]">pending_actions</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                Menunggu Verifikasi (Dokumen Sedang Direview)
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2.5 py-1 rounded-full">
+                No. Registrasi: REG-TAPUT-2026-0982
+              </span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">
+              Pemeriksaan Kelayakan Berkas Homestay &amp; Lisensi Pemandu
+            </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tim Verifikator Lapangan Dispar Taput sedang mencocokkan kelayakan fisik &amp; sertifikasi CHSE. Estimasi: 1x24 jam.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold hover:bg-surface-variant">
+            Unggah Revisi
+          </button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary">
+            Hubungi Helpdesk Dispar
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Stats Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Pesanan Terselesaikan</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">reservasi</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +28.5%
+        </span>
+<span>Bulan Berjalan (Okt 2026)</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Pendapatan Bersih</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">Rp 4.750.000</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+<span class="material-symbols-outlined text-[13px]">military_tech</span>
+          Subsidi Pemkab 0% Potongan
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Pencairan Otomatis</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Reputasi &amp; Ulasan</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">4.9</span>
+<div class="flex text-secondary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">48 Ulasan Terverifikasi</span>
+<span class="text-primary font-medium">99.2% Puas</span>
+</div>
+</div>
+</section>
+<!-- Main 2-Column Working Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Left Column: Layanan Saya & Form (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">cottage</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Layanan Saya</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-fixed/30 text-on-primary-fixed-variant px-2.5 py-1 rounded-full font-medium">
+          1 Unit Aktif Terdaftar
+        </span>
+</div>
+<!-- Active Service Display Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row gap-space-md items-start">
+<div class="w-full sm:w-44 h-36 rounded-lg overflow-hidden shrink-0 relative shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Traditional Batak wooden house homestay with authentic Gorga intricate carved red, black, and white wood ornaments facing calm Lake Toba water at dawn, lush green mountains backdrop in Tapanuli Utara" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfkt7D2ZZX5IbZfUUzNDBMI2q0O0Z_U3z6cGL1uyYrjrfLisHnPoNCc1kQsGen1M3jLJ29WABfEm7kMEQ-3JSPvKzcMmbo2yI4x0goHJMdX6B7okBhh9hV5JkKFALpDDyLJt4rBvfu3M0s7mxyR8bq4xeRAg49pIA-2OCAM65sYe4-16gXZjwsva4qrJe9lGT5UMyu0qY1MTEeQZq0OPOTkt26byORY74gbQnkHa0"/>
+<span class="absolute top-2 left-2 bg-primary/90 backdrop-blur text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded shadow-xs font-semibold">
+            Aktif
+          </span>
+</div>
+<div class="flex flex-col flex-1 justify-between min-w-0">
+<div>
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm bg-secondary-container/20 text-on-secondary-container px-2 py-0.5 rounded font-bold">
+                Homestay Budaya Tepi Danau
+              </span>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pin_drop</span> Sibandang
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 truncate">
+              Ruma Batak Sibandang Heritage
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Penginapan kayu otentik berarsitektur Gorga tepi Danau Toba dengan dermaga privat dan kebun mangga.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-md pt-space-xs border-none">
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span> 6 Tamu
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">bed</span> 3 Kamar
+              </span>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rp 250.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ malam</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Management Form Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Kelola / Tambah Layanan Mitra</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Perbarui rincian bilingual dan tarif untuk ditampilkan di aplikasi wisatawan.
+            </p>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px]">edit_note</span>
+</div>
+<form class="space-y-space-md" id="serviceForm" onsubmit="handleFormSubmit(event)">
+<!-- Name Inputs Bilingual -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="name_id">
+                Nama Layanan (ID) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface rounded-lg px-3 py-2.5 font-body-sm text-body-sm shadow-xs focus:outline-none focus:ring-2 focus:ring-primary-container" id="name_id" required="" type="text" value="Ruma Batak Sibandang Heritage"/>
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline uppercase">ID</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="name_en">
+                Nama Layanan (EN) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface rounded-lg px-3 py-2.5 font-body-sm text-body-sm shadow-xs focus:outline-none focus:ring-2 focus:ring-primary-container" id="name_en" required="" type="text" value="Sibandang Heritage Traditional Batak House"/>
+<span class="absolute right-3 top-2.5 font-label-sm text-label-sm text-outline uppercase">EN</span>
+</div>
+</div>
+</div>
+<!-- Description Bilingual -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="desc_id">
+                Deskripsi (ID) <span class="text-error">*</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface rounded-lg px-3 py-2 font-body-sm text-body-sm shadow-xs focus:outline-none focus:ring-2 focus:ring-primary-container leading-relaxed" id="desc_id" required="" rows="3">Penginapan kayu otentik berarsitektur Gorga tepi Danau Toba dengan pemandangan alami.</textarea>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="desc_en">
+                Deskripsi (EN) <span class="text-error">*</span>
+</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface rounded-lg px-3 py-2 font-body-sm text-body-sm shadow-xs focus:outline-none focus:ring-2 focus:ring-primary-container leading-relaxed" id="desc_en" required="" rows="3">Authentic Gorga carved Batak wooden lodge right by Lake Toba with private jetty.</textarea>
+</div>
+</div>
+<!-- Price & Capacity -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="price">
+                Harga Satuan (IDR) <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-label-md text-label-md text-on-surface-variant font-bold">Rp</span>
+<input class="w-full bg-surface-container-lowest text-on-surface rounded-lg pl-10 pr-24 py-2.5 font-body-sm text-body-sm shadow-xs focus:outline-none focus:ring-2 focus:ring-primary-container font-semibold" id="price" required="" type="text" value="250.000"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant">/ malam</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1" for="capacity">
+                Kapasitas Maksimal <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-lowest text-on-surface rounded-lg px-3 py-2.5 font-body-sm text-body-sm shadow-xs focus:outline-none focus:ring-2 focus:ring-primary-container" id="capacity" max="50" min="1" required="" type="number" value="6"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant">Orang</span>
+</div>
+</div>
+</div>
+<!-- Form Buttons -->
+<div class="pt-space-sm flex items-center justify-between gap-space-md">
+<div class="hidden text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1" id="saveToast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              Perubahan berhasil disimpan!
+            </div>
+<div class="ml-auto flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-lg text-label-lg font-semibold transition-colors" type="reset">
+                Batal
+              </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold shadow-sm transition-all flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+                Simpan Perubahan Layanan
+              </button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Column: Operational Calendar & Incoming Bookings (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Section 3: Kalender Operasional -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Ketersediaan &amp; Kalender</h3>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">Oktober 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+          Klik tanggal untuk mengubah ketersediaan homestay secara langsung.
+        </p>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-space-xs mb-space-md">
+<button class="py-2 px-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-variant font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="setTodayHoliday()" type="button">
+<span class="material-symbols-outlined text-[16px]">block</span>
+            Set Hari Ini Libur
+          </button>
+<button class="py-2 px-space-xs rounded-lg bg-primary-container/10 text-primary hover:bg-primary-container/20 font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 transition-colors" onclick="openExtraQuota()" type="button">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+            Buka Kuota Tambahan
+          </button>
+</div>
+<!-- Calendar Widget -->
+<div class="bg-surface-container-low rounded-xl p-space-sm">
+<!-- Calendar Weekdays -->
+<div class="grid grid-cols-7 text-center font-label-sm text-label-sm font-bold text-on-surface-variant py-1">
+<span>Sen</span>
+<span>Sel</span>
+<span>Rab</span>
+<span>Kam</span>
+<span>Jum</span>
+<span>Sab</span>
+<span>Min</span>
+</div>
+<!-- Calendar Days (October 2026: Starts on Thursday) -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm mt-1">
+<!-- Empty offset days for Oct 2026 (Thu is 1st) -->
+<div class="py-2 opacity-30 text-outline">28</div>
+<div class="py-2 opacity-30 text-outline">29</div>
+<div class="py-2 opacity-30 text-outline">30</div>
+<!-- Days 1 - 20 (Simulated available / booked / blocked) -->
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">1</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">2</button>
+<button class="py-2 rounded bg-error-container text-on-error-container font-semibold" title="Terisi / Terpesan">3</button>
+<button class="py-2 rounded bg-error-container text-on-error-container font-semibold" title="Terisi / Terpesan">4</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">5</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">6</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">7</button>
+<button class="py-2 rounded bg-surface-container-highest text-on-surface-variant font-semibold" title="Libur Pengelola">8</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">9</button>
+<button class="py-2 rounded bg-error-container text-on-error-container font-semibold" title="Terisi / Terpesan">10</button>
+<button class="py-2 rounded bg-error-container text-on-error-container font-semibold" title="Terisi / Terpesan">11</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">12</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">13</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">14</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">15</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">16</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">17</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">18</button>
+<!-- Current period (approx Oct 19-25) -->
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">19</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">20</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">21</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">22</button>
+<button class="py-2 rounded bg-primary text-on-primary font-bold shadow-xs">23</button>
+<!-- Requested Reservation 1: 24-26 Okt -->
+<button class="py-2 rounded bg-secondary-container/40 text-on-secondary-container font-bold relative" title="Permintaan Reservasi Baru">
+              24
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary absolute top-1 right-1"></span>
+</button>
+<button class="py-2 rounded bg-secondary-container/40 text-on-secondary-container font-bold relative" title="Permintaan Reservasi Baru">
+              25
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary absolute top-1 right-1"></span>
+</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">26</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">27</button>
+<!-- Requested Tour: 28 Okt -->
+<button class="py-2 rounded bg-secondary-container/40 text-on-secondary-container font-bold relative" title="Permintaan Tour">
+              28
+              <span class="w-1.5 h-1.5 rounded-full bg-secondary absolute top-1 right-1"></span>
+</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">29</button>
+<button class="py-2 rounded bg-surface-container-lowest text-primary font-semibold hover:bg-primary-fixed/30">30</button>
+<button class="py-2 rounded bg-error-container text-on-error-container font-semibold">31</button>
+<div class="py-2 opacity-30 text-outline">1</div>
+</div>
+</div>
+<!-- Legend -->
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container-lowest border border-primary/20 shadow-xs"></span>
+<span>Tersedia</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-error-container"></span>
+<span>Terisi / Terpesan</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container-highest"></span>
+<span>Libur / Ditutup</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary-container"></span>
+<span>Menunggu Respon</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Pesanan Masuk (Permintaan Reservasi Baru) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">notifications_active</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Pesanan Masuk</h3>
+</div>
+<span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+            2 Baru
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Konfirmasi segera sebelum batas waktu sistem berakhir otomatis.
+        </p>
+<!-- Booking Cards Stream -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md relative overflow-hidden transition-all duration-300" id="bookingCard1">
+<!-- Urgent Timer Badge -->
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                Batas Konfirmasi: 01 jam 45 menit lagi
+              </span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">#ORD-9021</span>
+</div>
+<div class="mt-space-xs">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Bpk. Aris Munandar
+              </h4>
+<p class="font-label-md text-label-md text-on-surface-variant">
+                Rombongan Keluarga • 4 Dewasa
+              </p>
+</div>
+<div class="mt-space-sm bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Tanggal Menginap
+                </span>
+<span class="font-semibold text-on-surface">24 - 26 Oktober 2026 (2 Malam)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">payments</span> Nilai Bersih
+                </span>
+<span class="font-bold text-primary text-label-md">Rp 500.000</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-space-md flex items-center gap-space-xs">
+<button class="flex-1 py-2 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-error hover:bg-error-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1" onclick="rejectBooking('bookingCard1', 'Bpk. Aris Munandar')">
+<span class="material-symbols-outlined text-[16px]">close</span>
+                Tolak Pesanan
+              </button>
+<button class="flex-1 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-xs flex items-center justify-center gap-1" onclick="acceptBooking('bookingCard1', 'Bpk. Aris Munandar')">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                Terima Pesanan
+              </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md relative overflow-hidden transition-all duration-300" id="bookingCard2">
+<!-- Deadline Timer Badge -->
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                Batas Konfirmasi: 04 jam 12 menit lagi
+              </span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">#ORD-9022</span>
+</div>
+<div class="mt-space-xs">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Sarah Jenkins
+              </h4>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">travel_explore</span>
+                2 Tamu Mancanegara (Australia)
+              </p>
+</div>
+<div class="mt-space-sm bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">map</span> Layanan Pemandu
+                </span>
+<span class="font-semibold text-on-surface">Paket Tour Pemandu Geosite</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event</span> Tanggal Tour
+                </span>
+<span class="font-semibold text-on-surface">28 Oktober 2026 (08:30 WIB)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">payments</span> Total Tarif Pemandu
+                </span>
+<span class="font-bold text-primary text-label-md">Rp 350.000</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-space-md flex items-center gap-space-xs">
+<button class="flex-1 py-2 rounded-lg bg-surface-container-highest text-on-surface-variant hover:text-error hover:bg-error-container font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1" onclick="rejectBooking('bookingCard2', 'Sarah Jenkins')">
+<span class="material-symbols-outlined text-[16px]">close</span>
+                Tolak Pesanan
+              </button>
+<button class="flex-1 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-bold transition-all shadow-xs flex items-center justify-center gap-1" onclick="acceptBooking('bookingCard2', 'Sarah Jenkins')">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                Terima Pesanan
+              </button>
+</div>
+</div>
+</div>
+<!-- History Tabs -->
+<div class="mt-space-lg pt-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="flex-1 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-xs transition-all" id="tabDone" onclick="switchHistoryTab('done')">
+              Pesanan Selesai (18)
+            </button>
+<button class="flex-1 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all" id="tabCancelled" onclick="switchHistoryTab('cancelled')">
+              Riwayat Dibatalkan (2)
+            </button>
+</div>
+<!-- History Content Preview -->
+<div class="mt-space-sm space-y-space-xs" id="historyContentDone">
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<div>
+<p class="font-semibold text-on-surface">Keluarga Pardede • 2 Malam</p>
+<p class="text-on-surface-variant text-[11px]">18 - 20 Okt 2026</p>
+</div>
+</div>
+<span class="font-bold text-primary">Rp 500.000</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<div>
+<p class="font-semibold text-on-surface">Markus • Tour Geosite Muara</p>
+<p class="text-on-surface-variant text-[11px]">15 Okt 2026</p>
+</div>
+</div>
+<span class="font-bold text-primary">Rp 350.000</span>
+</div>
+</div>
+<div class="hidden mt-space-sm space-y-space-xs" id="historyContentCancelled">
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">cancel</span>
+<div>
+<p class="font-semibold text-on-surface">Rian Silitonga • Permintaan Batal</p>
+<p class="text-on-surface-variant text-[11px]">11 Okt 2026 • Alasan: Cuaca Hujan Danau</p>
+</div>
+</div>
+<span class="font-semibold text-on-surface-variant">Rp 0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Rejection Reason Modal (Vanilla JS dialog) -->
+<dialog class="rounded-2xl p-space-lg bg-surface-container-lowest max-w-md w-full shadow-2xl backdrop:bg-primary/40 backdrop:backdrop-blur-xs" id="rejectModal">
+<div class="flex items-center gap-space-xs text-error mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+<h4 class="font-headline-sm text-headline-sm font-bold">Konfirmasi Tolak Pesanan</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+      Pilih alasan pembatalan untuk tamu <strong class="text-on-surface" id="rejectGuestName"></strong>. Pemberitahuan akan dikirimkan secara otomatis via WhatsApp/Email.
+    </p>
+<div class="space-y-2 mb-space-lg font-label-md text-label-md">
+<label class="flex items-center gap-2 p-2 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-variant">
+<input checked="" class="text-primary focus:ring-primary" name="reject_reason" type="radio" value="Kamar penuh offline"/>
+<span>Kamar penuh / Terpesan offline lokal</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-variant">
+<input class="text-primary focus:ring-primary" name="reject_reason" type="radio" value="Renovasi fasilitas"/>
+<span>Perbaikan atau renovasi fasilitas mendadak</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container rounded-lg cursor-pointer hover:bg-surface-variant">
+<input class="text-primary focus:ring-primary" name="reject_reason" type="radio" value="Pemandu berhalangan"/>
+<span>Jadwal pemandu geosite bentrok agenda adat</span>
+</label>
+</div>
+<div class="flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold hover:bg-surface-variant" onclick="closeRejectModal()">
+        Kembali
+      </button>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error font-label-md text-label-md font-bold hover:opacity-90 shadow-xs" onclick="confirmRejectionAction()">
+        Konfirmasi Penolakan
+      </button>
+</div>
+</dialog>
+<!-- Interactive Logic -->
+<script>
+    let activeCardIdToReject = null;
+
+    function toggleVerificationStatus() {
+      const verifiedCard = document.getElementById('verifiedStatusCard');
+      const pendingCard = document.getElementById('pendingStatusCard');
+      const toggleBtn = document.getElementById('toggleStatusBtn');
+
+      if (verifiedCard.classList.contains('hidden')) {
+        verifiedCard.classList.remove('hidden');
+        pendingCard.classList.add('hidden');
+        toggleBtn.innerHTML = `<span class="material-symbols-outlined text-[14px]">published_with_changes</span> Ganti ke "Menunggu Verifikasi"`;
+      } else {
+        verifiedCard.classList.add('hidden');
+        pendingCard.classList.remove('hidden');
+        toggleBtn.innerHTML = `<span class="material-symbols-outlined text-[14px]">published_with_changes</span> Ganti ke "Terverifikasi"`;
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const toast = document.getElementById('saveToast');
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+
+    function acceptBooking(cardId, guestName) {
+      const card = document.getElementById(cardId);
+      if (!card) return;
+      card.innerHTML = `
+        <div class="p-space-md bg-primary-container/10 rounded-xl text-center flex flex-col items-center justify-center py-6">
+          <span class="material-symbols-outlined text-primary text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          <h4 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Pesanan Diterima!</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Reservasi untuk ${guestName} telah masuk ke jadwal aktif.</p>
+        </div>
+      `;
+    }
+
+    function rejectBooking(cardId, guestName) {
+      activeCardIdToReject = cardId;
+      document.getElementById('rejectGuestName').textContent = guestName;
+      const modal = document.getElementById('rejectModal');
+      if (modal.showModal) {
+        modal.showModal();
+      } else {
+        modal.style.display = 'block';
+      }
+    }
+
+    function closeRejectModal() {
+      const modal = document.getElementById('rejectModal');
+      if (modal.close) {
+        modal.close();
+      } else {
+        modal.style.display = 'none';
+      }
+      activeCardIdToReject = null;
+    }
+
+    function confirmRejectionAction() {
+      if (activeCardIdToReject) {
+        const card = document.getElementById(activeCardIdToReject);
+        if (card) {
+          card.innerHTML = `
+            <div class="p-space-md bg-surface-container-high rounded-xl text-center flex flex-col items-center justify-center py-6">
+              <span class="material-symbols-outlined text-error text-[36px]">cancel</span>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Pesanan Ditolak</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tamu telah diinformasikan untuk memilih opsi alternatif.</p>
+            </div>
+          `;
+        }
+      }
+      closeRejectModal();
+    }
+
+    function switchHistoryTab(tab) {
+      const btnDone = document.getElementById('tabDone');
+      const btnCancelled = document.getElementById('tabCancelled');
+      const contentDone = document.getElementById('historyContentDone');
+      const contentCancelled = document.getElementById('historyContentCancelled');
+
+      if (tab === 'done') {
+        btnDone.className = 'flex-1 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-xs transition-all';
+        btnCancelled.className = 'flex-1 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all';
+        contentDone.classList.remove('hidden');
+        contentCancelled.classList.add('hidden');
+      } else {
+        btnCancelled.className = 'flex-1 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-xs transition-all';
+        btnDone.className = 'flex-1 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all';
+        contentCancelled.classList.remove('hidden');
+        contentDone.classList.add('hidden');
+      }
+    }
+
+    function setTodayHoliday() {
+      alert('Tanggal hari ini berhasil di-set LIBUR (Blocked). Kalender telah diperbarui.');
+    }
+
+    function openExtraQuota() {
+      alert('Kuota tambahan +2 tamu berhasil dibuka untuk slot akhir pekan ini.');
+    }
+  </script>
+</div></div></main><footer class="w-full bg-primary text-on-primary mt-auto shadow-[0_-4px_20px_rgba(0,67,67,0.12)]"><div class="max-w-[1120px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-xl"><div class="bg-primary-container/70 rounded-xl p-space-lg flex items-start gap-space-md shadow-sm"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-primary text-[26px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs mb-space-xs"><span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold uppercase tracking-wider">Otoritas Resmi</span></div><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Pemerintah Kab. Tapanuli Utara</h4><p class="font-body-sm text-body-sm text-on-primary-container mt-1 font-medium leading-relaxed">Dinas Pariwisata &amp; Kebudayaan Kabupaten Tapanuli Utara. Penyelenggara resmi standardisasi digital destinasi geopark dan kepariwisataan daerah.</p></div></div><div class="bg-primary-container/70 rounded-xl p-space-lg flex items-start gap-space-md shadow-sm"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-primary text-[26px]">school</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs mb-space-xs"><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded font-bold uppercase tracking-wider">Riset &amp; Inovasi</span></div><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Universitas Teknokrat Indonesia</h4><p class="font-body-sm text-body-sm text-on-primary-container mt-1 font-medium leading-relaxed">Mitra Riset Digitalisasi &amp; Smart Governance. Pengembangan platform verifikasi tiket cerdas, tata kelola data, dan sistem integritas transaksi daerah.</p></div></div></div><div class="pt-space-md text-center flex flex-col items-center justify-center gap-space-xs"><p class="font-label-md text-label-md text-on-primary-container">Copyright©2026 by Pelita Julia Silaban dan Dr. Erliyan Redy Susanto, M.Kom</p><p class="font-label-sm text-label-sm text-on-primary-container/80">Sistem Akses Resmi Taput Wisata Pass • Tarutung, Tapanuli Utara, Sumatera Utara</p></div></div></footer></body></html>

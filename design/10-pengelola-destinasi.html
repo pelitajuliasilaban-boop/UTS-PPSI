@@ -1,0 +1,461 @@
+<!-- Pengelola Destinasi (Web Desktop) -->
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Taput Wisata Pass - Portal Pengelola &amp; Mitra</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed-variant":"#6c391f","on-error-container":"#93000a","outline":"#6f7978","on-background":"#191c1c","primary-container":"#0f5c5c","secondary-fixed":"#ffdead","on-tertiary-container":"#ffb693","error":"#ba1a1a","on-secondary-container":"#6a4800","surface":"#f8faf9","surface-container-lowest":"#ffffff","tertiary-container":"#7a452a","inverse-primary":"#90d2d1","tertiary":"#5e2f16","surface-variant":"#e1e3e2","on-primary-fixed":"#002020","secondary-fixed-dim":"#ffba3b","on-secondary":"#ffffff","inverse-surface":"#2e3131","outline-variant":"#bfc8c8","on-surface":"#191c1c","primary-fixed":"#aceeee","surface-tint":"#216868","on-primary-fixed-variant":"#004f50","background":"#f8faf9","on-secondary-fixed":"#281900","on-tertiary-fixed":"#351000","primary":"#004343","on-surface-variant":"#3f4948","on-secondary-fixed-variant":"#604100","on-primary-container":"#90d2d1","surface-container":"#eceeed","surface-bright":"#f8faf9","on-primary":"#ffffff","surface-dim":"#d8dada","surface-container-highest":"#e1e3e2","error-container":"#ffdad6","surface-container-high":"#e6e9e8","secondary-container":"#feb316","inverse-on-surface":"#eff1f0","surface-container-low":"#f2f4f3","on-error":"#ffffff","on-tertiary":"#ffffff","secondary":"#7f5700","primary-fixed-dim":"#90d2d1","tertiary-fixed":"#ffdbcc","tertiary-fixed-dim":"#ffb693"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-desktop":"3rem","space-lg":"1.5rem","space-xl":"2.5rem","margin-tablet":"2rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","gutter":"1rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 w-full z-50 bg-primary-container text-on-primary shadow-[0_4px_16px_-2px_rgba(15,92,92,0.18)]"><div class="h-20 max-w-[1120px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="w-11 h-11 rounded-lg bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0"><span class="material-symbols-outlined text-primary text-[28px]">assured_workload</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-tight leading-tight">Taput Wisata Pass</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase font-medium">Portal Pengelola &amp; Mitra</span></div></div><nav class="hidden lg:flex items-center gap-space-xs bg-primary/40 p-1.5 rounded-xl" data-active-classes="bg-surface-container-lowest text-primary font-semibold shadow-sm"><a class="font-label-lg text-label-lg text-on-primary px-space-md py-space-sm rounded-lg hover:bg-primary-fixed/20 hover:text-on-primary transition-all duration-150" data-path="panel-mitra" href="#">Panel Mitra</a><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-all duration-150 bg-surface-container-lowest text-primary font-semibold shadow-sm" data-path="pengelola-destinasi" href="#">Pengelola Destinasi</a><a class="font-label-lg text-label-lg text-on-primary px-space-md py-space-sm rounded-lg hover:bg-primary-fixed/20 hover:text-on-primary transition-all duration-150" data-path="verifikasi-bantuan" href="#">Verifikasi &amp; Bantuan</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center bg-primary/50 p-1 rounded-lg"><button class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-xs" type="button">ID</button><button class="px-2.5 py-1 rounded text-on-primary-container hover:text-on-primary font-label-sm text-label-sm font-medium transition-colors" type="button">EN</button></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="hidden sm:flex flex-col text-right"><span class="font-label-md text-label-md text-on-primary font-semibold leading-tight">Verifikator Resmi</span><span class="font-label-sm text-label-sm text-secondary-fixed font-medium">Dinas Pariwisata</span></div><div class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-xs shrink-0 ring-2 ring-secondary-container/80"><span class="material-symbols-outlined text-primary text-[20px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="max-w-[1120px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Scope Banner: Strict Destinasi Tunggal Scope -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border-l-4 border-primary">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">tour</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-md text-label-md px-2 py-0.5 rounded bg-primary text-on-primary">Destinasi Aktif</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-mono">ID: DST-TAPUT-01</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              Hak Kelola Terbatas: Unit Destinasi Tunggal
+            </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface">Salib Kasih Siatas Barita</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Unit Pelaksana Teknis Pengelola Kawasan Wisata Rohani &amp; Hutan Lindung Pinus Dolok Siatas Barita</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Status Gerbang</span>
+<span class="font-label-md text-label-md text-on-surface">Buka Normal (06:00 - 18:00 WIB)</span>
+</div>
+</div>
+<div class="h-6 w-px bg-outline-variant/60 mx-1 hidden sm:block"></div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+<span>Sinkronisasi Otomatis: <strong class="text-on-surface">Aktif</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Guardrails Callout -->
+<div class="bg-primary/5 rounded-lg px-space-md py-space-sm flex items-center justify-between gap-space-md text-primary font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] shrink-0 text-primary">security_update_warning</span>
+<span>Kewenangan akun operasional terbatas pada pemindaian gerbang, pemantauan daya tampung, dan log masuk Salib Kasih.</span>
+</div>
+<span class="hidden md:inline-flex font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant shadow-xs">Portal Gerbang Resmi</span>
+</div>
+<!-- Hero Grid: Gauge & Analytics + Location Card -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Quota & Capacity Radial Visualizer (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Daya Dukung Lingkungan (Carrying Capacity)</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pengunjung Hari Ini vs Kuota Kawasan</h2>
+</div>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md px-2.5 py-1 rounded-full bg-primary/10 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+          Kondisi Hijau: Terkendali
+        </span>
+</div>
+<!-- Semi-Radial SVG Gauge Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center py-space-sm">
+<div class="md:col-span-6 flex flex-col items-center justify-center relative">
+<!-- Inline Gauge Visualization -->
+<svg class="w-52 h-52 -rotate-90" viewbox="0 0 120 120">
+<!-- Background Ring -->
+<circle cx="60" cy="60" fill="none" r="48" stroke="#e6e9e8" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Active Progress Ring: 48.2% of circumference ~ 301.59 * 0.482 = 145.3 -->
+<circle class="transition-all duration-1000 ease-out" cx="60" cy="60" fill="none" r="48" stroke="#004343" stroke-dasharray="301.59" stroke-dashoffset="156.2" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pt-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold leading-none">48.2<span class="text-primary text-headline-sm font-bold">%</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Kapasitas Terisi</span>
+</div>
+</div>
+<div class="md:col-span-6 space-y-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tiket Tervalidasi</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">482</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 1.000 Tiket</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 48.2%;"></div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-secondary-fixed/30 text-on-secondary-fixed">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">Sisa Kuota Aman Pintu Gerbang</span>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">518 Tiket</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-bold">51.8% Tersedia</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Ambang batas daya dukung harian dihitung berdasarkan regulasi konservasi kawasan Dolok Siatas Barita demi menjaga kelestarian pepohonan dan kenyamanan doa hening.
+          </p>
+</div>
+</div>
+<!-- Comparative metrics strip -->
+<div class="grid grid-cols-2 gap-space-md pt-space-md mt-space-sm">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">history</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kunjungan Kemarin</div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">620 Wisatawan</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[24px] text-secondary">trending_up</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Puncak Minggu Ini</div>
+<div class="font-label-lg text-label-lg font-bold text-on-surface">910 Wisatawan</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Identity & Destination Showcase (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Destination Image Card -->
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex-1 flex flex-col">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Panoramic daytime view of Salib Kasih monument standing tall on the forested green summit of Dolok Siatas Barita in North Tapanuli, surrounded by lush pine woods, tranquil mountain mist, warm sunlight, clean architectural paths, civic tourism landscape with crisp natural colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNY7dNleSQOxOcLZCVSErF3Us9z_-RJhTa772fgKRlBKrNHrmHu9KEUsvVE1j24gj_BKjpDDuxFfpDVa5vFCchILoLY1u5VkGzMdXhBeP7ku2S4BPAE5q0OHKO5vQTiFuzd3qL1m_wYpwoIa32MNeAxxVzlkJ3C9pgTioBd3VZF5PYDnqDCAeY8WXJm8IukSmLoBAUpHDuQ-6DBZ0lpSCnkIOVGxrQbsBJ4O-plSA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 text-on-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Kawasan Hutan Lindung Dolok Siatas Barita</span>
+<h3 class="font-headline-sm text-headline-sm font-bold leading-tight">Wisata Rohani &amp; Alam Salib Kasih</h3>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant">Ketinggian Lokasi:</span>
+<span class="font-bold">± 1.100 mdpl (Tarutung)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant">Zona Doa &amp; Hutan:</span>
+<span class="font-bold text-primary">Tertib &amp; Tenang</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant">Waktu Operasional:</span>
+<span class="font-bold">06.00 - 18.00 WIB</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">phone_in_talk</span>
+<span class="font-label-sm text-label-sm font-medium text-on-surface">Posko Siaga Pengawas Lapangan:</span>
+</div>
+<a class="font-label-md text-label-md font-bold text-primary hover:underline" href="tel:081263210000">0812-6321-xxxx</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hourly Foot-Traffic Chart (06:00 - 18:00 WIB) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">bar_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Grafik Kunjungan per Jam Hari Ini</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fluktuasi kepadatan wisatawan masuk melalui loket turnstile Salib Kasih Siatas Barita</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary-container/30 text-on-secondary-container font-label-md text-label-md font-bold shadow-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">flare</span>
+          Puncak Kunjungan: 14:00 WIB (125 pengunjung)
+        </span>
+</div>
+</div>
+<!-- Column Bar Chart Visualization -->
+<div class="w-full pt-4 pb-2">
+<div class="grid grid-cols-12 gap-2 sm:gap-4 items-end h-56 px-2">
+<!-- 06:00 (15) -> 12% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">15</span>
+<div class="w-full bg-primary/20 hover:bg-primary rounded-t transition-all duration-300" style="height: 12%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">06:00</span>
+</div>
+<!-- 07:00 (35) -> 28% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">35</span>
+<div class="w-full bg-primary/25 hover:bg-primary rounded-t transition-all duration-300" style="height: 28%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">07:00</span>
+</div>
+<!-- 08:00 (52) -> 41% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">52</span>
+<div class="w-full bg-primary/35 hover:bg-primary rounded-t transition-all duration-300" style="height: 41%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">08:00</span>
+</div>
+<!-- 09:00 (78) -> 62% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">78</span>
+<div class="w-full bg-primary/50 hover:bg-primary rounded-t transition-all duration-300" style="height: 62%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">09:00</span>
+</div>
+<!-- 10:00 (110 - Ramai Pagi) -> 88% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end relative">
+<div class="absolute -top-7 hidden sm:block whitespace-nowrap bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.5 rounded shadow-xs font-bold">
+            Ramai Pagi
+          </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">110</span>
+<div class="w-full bg-secondary-container hover:bg-secondary rounded-t transition-all duration-300" style="height: 88%;"></div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface font-mono">10:00</span>
+</div>
+<!-- 11:00 (85) -> 68% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">85</span>
+<div class="w-full bg-primary/50 hover:bg-primary rounded-t transition-all duration-300" style="height: 68%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">11:00</span>
+</div>
+<!-- 12:00 (60) -> 48% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">60</span>
+<div class="w-full bg-primary/40 hover:bg-primary rounded-t transition-all duration-300" style="height: 48%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">12:00</span>
+</div>
+<!-- 13:00 (72) -> 57% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">72</span>
+<div class="w-full bg-primary/45 hover:bg-primary rounded-t transition-all duration-300" style="height: 57%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">13:00</span>
+</div>
+<!-- 14:00 (125 - Puncak Siang) -> 100% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end relative">
+<div class="absolute -top-7 hidden sm:block whitespace-nowrap bg-primary text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded shadow-xs font-bold animate-pulse">
+            Puncak 125
+          </div>
+<span class="font-label-sm text-label-sm text-primary font-bold">125</span>
+<div class="w-full bg-primary hover:bg-primary-container rounded-t transition-all duration-300 shadow-md" style="height: 100%;"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary font-mono">14:00</span>
+</div>
+<!-- 15:00 (80) -> 64% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">80</span>
+<div class="w-full bg-primary/50 hover:bg-primary rounded-t transition-all duration-300" style="height: 64%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">15:00</span>
+</div>
+<!-- 16:00 (45) -> 36% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">45</span>
+<div class="w-full bg-primary/30 hover:bg-primary rounded-t transition-all duration-300" style="height: 36%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">16:00</span>
+</div>
+<!-- 17:00 (20) -> 16% height -->
+<div class="flex flex-col items-center gap-2 group h-full justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity font-bold">20</span>
+<div class="w-full bg-primary/20 hover:bg-primary rounded-t transition-all duration-300" style="height: 16%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">17:00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Petugas Gerbang Siaga Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Daftar Petugas Gerbang Siaga Hari Ini</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Personel verifikasi fisik dan pengawasan pintu masuk turnstile Salib Kasih</p>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-medium">Shift Pagi-Sore: 06:00 - 18:00 WIB</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Petugas 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">
+              TS
+            </div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Tigor Simanjuntak</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIP: 19870412 201202 1 002</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Aktif Bertugas
+          </span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Posisi Penugasan:</span>
+<span class="font-bold text-on-surface">Loket 01 (Turnstile Utama)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Total Pindaian:</span>
+<span class="font-bold text-primary">248 Tiket</span>
+</div>
+</div>
+</div>
+<!-- Petugas 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">
+              MS
+            </div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Marta Siregar</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIP: 19910825 201503 2 001</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Aktif Bertugas
+          </span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Posisi Penugasan:</span>
+<span class="font-bold text-on-surface">Loket 02 (Gerbang Rombongan/VIP)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Total Pindaian:</span>
+<span class="font-bold text-primary">184 Tiket</span>
+</div>
+</div>
+</div>
+<!-- Petugas 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">
+              JH
+            </div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Jefri Hutasoit</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tenaga Harian Lepas Dispar</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed-variant font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Siaga Istirahat
+          </span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Posisi Penugasan:</span>
+<span class="font-bold text-on-surface">Loket 03 (Pintu Cadangan)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Total Pindaian:</span>
+<span class="font-bold text-primary">50 Tiket</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Stream Table: Tabel Pindaian Terkini (Recent Scans) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">qr_code_scanner</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Tabel Pindaian Terkini (Recent Scans)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Aliran verifikasi karcis digital langsung dari turnstile gerbang Salib Kasih</p>
+</div>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-xs transition-colors shrink-0" id="refreshScanBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Refresh Log Pindaian</span>
+</button>
+</div>
+<!-- Live Scans Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-lg">Waktu Pindai</th>
+<th class="py-3 px-space-md">Kode Tiket</th>
+<th class="py-3 px-space-md">Kategori Pengunjung</th>
+<th class="py-3 px-space-md">Pintu Masuk</th>
+<th class="py-3 px-space-md rounded-r-lg">Hasil Verifikasi &amp; Gerbang</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/60">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono text-on-surface font-semibold">14:38:12 WIB</td>
+<td class="py-3.5 px-space-md font-mono text-primary font-bold">TPT-2026-9182-04</td>
+<td class="py-3.5 px-space-md text-on-surface">2 Wisatawan Nusantara</td>
+<td class="py-3.5 px-space-md text-on-surface-variant">Loket 01 (Turnstile Utama)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                VALID (Palang Terbuka)
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono text-on-surface font-semibold">14:35:40 WIB</td>
+<td class="py-3.5 px-space-md font-mono text-primary font-bold">TPT-2026-9182-01</td>
+<td class="py-3.5 px-space-md text-on-surface">4 Wisatawan (Paket Keluarga)</td>
+<td class="py-3.5 px-space-md text-on-surface-variant">Loket 02 (Rombongan/VIP)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                VALID (Palang Terbuka)
+              </span>
+</td>
+</tr>
+<!-- Row 3: Rejected ticket -->
+<tr class="bg-error-container/20 hover:bg-error-container/30 transition-colors">
+<td class="py-3.5 px-space-md font-mono text-error font-semibold">14:31:05 WIB</td>
+<td class="py-3.5 px-space-md font-mono text-error font-bold">TPT-2026-8841-99</td>
+<td class="py-3.5 px-space-md text-on-surface">1 Wisatawan Mancanegara</td>
+<td class="py-3.5 px-space-md text-on-surface-variant">Loket 01 (Turnstile Utama)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+                DITOLAK (Sudah Terpakai pukul 11:20 WIB)
+              </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md font-mono text-on-surface font-semibold">14:26:18 WIB</td>
+<td class="py-3.5 px-space-md font-mono text-primary font-bold">TPT-2026-9180-22</td>
+<td class="py-3.5 px-space-md text-on-surface">2 Pelajar / Mahasiswa</td>
+<td class="py-3.5 px-space-md text-on-surface-variant">Loket 01 (Turnstile Utama)</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                VALID
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Menampilkan 4 pindaian terakhir secara instan.</span>
+<span class="font-mono">Latensi Sensor Gerbang: 42 ms</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Refresh Log button
+  document.getElementById('refreshScanBtn')?.addEventListener('click', function() {
+    const icon = this.querySelector('.material-symbols-outlined');
+    if (icon) {
+      icon.classList.add('animate-spin');
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+      }, 700);
+    }
+  });
+</script></div></main><footer class="w-full bg-primary text-on-primary mt-auto shadow-[0_-4px_20px_rgba(0,67,67,0.12)]"><div class="max-w-[1120px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-xl"><div class="bg-primary-container/70 rounded-xl p-space-lg flex items-start gap-space-md shadow-sm"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-primary text-[26px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs mb-space-xs"><span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold uppercase tracking-wider">Otoritas Resmi</span></div><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Pemerintah Kab. Tapanuli Utara</h4><p class="font-body-sm text-body-sm text-on-primary-container mt-1 font-medium leading-relaxed">Dinas Pariwisata &amp; Kebudayaan Kabupaten Tapanuli Utara. Penyelenggara resmi standardisasi digital destinasi geopark dan kepariwisataan daerah.</p></div></div><div class="bg-primary-container/70 rounded-xl p-space-lg flex items-start gap-space-md shadow-sm"><div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-xs"><span class="material-symbols-outlined text-primary text-[26px]">school</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs mb-space-xs"><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded font-bold uppercase tracking-wider">Riset &amp; Inovasi</span></div><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Universitas Teknokrat Indonesia</h4><p class="font-body-sm text-body-sm text-on-primary-container mt-1 font-medium leading-relaxed">Mitra Riset Digitalisasi &amp; Smart Governance. Pengembangan platform verifikasi tiket cerdas, tata kelola data, dan sistem integritas transaksi daerah.</p></div></div></div><div class="pt-space-md text-center flex flex-col items-center justify-center gap-space-xs"><p class="font-label-md text-label-md text-on-primary-container">Copyright©2026 by Pelita Julia Silaban dan Dr. Erliyan Redy Susanto, M.Kom</p><p class="font-label-sm text-label-sm text-on-primary-container/80">Sistem Akses Resmi Taput Wisata Pass • Tarutung, Tapanuli Utara, Sumatera Utara</p></div></div></footer></body></html>

@@ -1,0 +1,775 @@
+<!-- Mitra, Laporan & Audit (Web Admin) -->
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Taput Wisata Pass - Portal Resmi Dinas Pariwisata Kab. Tapanuli Utara</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#e1e3e2","surface-container-lowest":"#ffffff","secondary-container":"#feb316","tertiary-fixed-dim":"#ffb693","inverse-on-surface":"#eff1f0","on-primary-fixed-variant":"#004f50","on-tertiary-container":"#ffb693","outline-variant":"#bfc8c8","tertiary-fixed":"#ffdbcc","on-error-container":"#93000a","primary":"#004343","surface-container-high":"#e6e9e8","primary-container":"#0f5c5c","surface-container":"#eceeed","primary-fixed":"#aceeee","on-tertiary":"#ffffff","surface-tint":"#216868","on-error":"#ffffff","on-tertiary-fixed-variant":"#6c391f","on-primary-container":"#90d2d1","tertiary":"#5e2f16","outline":"#6f7978","secondary-fixed-dim":"#ffba3b","on-surface-variant":"#3f4948","on-background":"#191c1c","on-tertiary-fixed":"#351000","on-primary-fixed":"#002020","surface":"#f8faf9","error":"#ba1a1a","inverse-primary":"#90d2d1","on-secondary":"#ffffff","on-secondary-container":"#6a4800","on-secondary-fixed-variant":"#604100","secondary-fixed":"#ffdead","on-secondary-fixed":"#281900","tertiary-container":"#7a452a","error-container":"#ffdad6","primary-fixed-dim":"#90d2d1","secondary":"#7f5700","on-surface":"#191c1c","inverse-surface":"#2e3131","surface-bright":"#f8faf9","on-primary":"#ffffff","background":"#f8faf9","surface-dim":"#d8dada","surface-container-highest":"#e1e3e2","surface-container-low":"#f2f4f3"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem",gutter:"1rem","margin-tablet":"2rem","space-xl":"2.5rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","space-md":"1rem",margin:"1rem","margin-desktop":"3rem","space-xs":"0.25rem"},fontFamily:{"body-md":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"]},fontSize:{"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,92,92,0.06)]"><div class="h-20 w-full max-w-[1120px] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">verified_user</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Taput Wisata Pass</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Portal Resmi Dinas Pariwisata Kab. Tapanuli Utara</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="dasbor-utama" href="#">Dasbor Utama</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="kelola-destinasi-kuota" href="#">Kelola Destinasi &amp; Kuota</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="mitra-verifikasi" href="#">Mitra &amp; Verifikasi</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="laporan-pad-audit" href="#">Laporan PAD &amp; Audit</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" data-path="pemantauan-bapenda" href="#">Pemantauan Bapenda</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="flex items-center bg-surface-container-low p-space-xs rounded-lg"><button class="px-space-sm py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary" type="button">ID</button><button class="px-space-sm py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">EN</button></div><div class="hidden md:flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">verified</span><span>Otoritas Dispar</span></div><a class="hidden lg:flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="tel:063321288"><span class="material-symbols-outlined text-[16px]">call</span><span>(0633) 21288</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Top Command & Breadcrumb Surface -->
+<div class="w-full bg-surface-container-low/70 backdrop-blur-sm shadow-sm">
+<div class="max-w-[1120px] mx-auto px-gutter-desktop py-space-md flex flex-col gap-space-sm">
+<nav class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">home_app_logo</span>
+<span>Beranda Admin</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Pengawasan &amp; Kemitraan</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tight">
+            Mitra, Rekapitulasi PAD &amp; Log Audit Transaksi
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Pusat Rekonsiliasi Fiskal &amp; Instrumen Tata Kelola Ekosistem Pariwisata Tapanuli Utara
+          </p>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<div class="flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Bapenda Terhubung: ID-9082/2026</span>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sinkron Kasda</span>
+</button>
+</div>
+</div>
+<!-- Segmented Main Tabs -->
+<div class="flex items-center gap-2 pt-space-xs overflow-x-auto">
+<button class="tab-pill active flex items-center gap-2 px-4 py-2.5 rounded-xl font-label-lg text-label-lg transition-all duration-200 bg-primary-container text-on-primary shadow-sm" id="tab-btn-mitra" onclick="switchSection('mitra')" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Verifikasi Kemitraan</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">14</span>
+</button>
+<button class="tab-pill flex items-center gap-2 px-4 py-2.5 rounded-xl font-label-lg text-label-lg transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-primary" id="tab-btn-pad" onclick="switchSection('pad')" type="button">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Laporan Penerimaan PAD</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">Okt 2026</span>
+</button>
+<button class="tab-pill flex items-center gap-2 px-4 py-2.5 rounded-xl font-label-lg text-label-lg transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-primary" id="tab-btn-audit" onclick="switchSection('audit')" type="button">
+<span class="material-symbols-outlined text-[18px]">security_update_good</span>
+<span>Log Audit Otoritas &amp; Keamanan</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Content Container -->
+<div class="max-w-[1120px] mx-auto w-full px-gutter-desktop py-space-lg flex flex-col gap-space-lg">
+<!-- ============================================== -->
+<!-- PANEL 1: VERIFIKASI MITRA HOMESTAY & PEMANDU   -->
+<!-- ============================================== -->
+<section class="flex flex-col gap-space-md" id="panel-mitra">
+<!-- Status Badge Filter Row -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-secondary-container/20 text-on-secondary-container font-label-md text-label-md font-bold flex items-center gap-2" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Menunggu Verifikasi (3)</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-primary flex items-center gap-2 transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Disetujui / Terakreditasi (24)</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-primary flex items-center gap-2 transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Ditolak / Perlu Perbaikan (2)</span>
+</button>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">fact_check</span>
+<span>Verifikasi Terakhir Sinkron: Hari Ini, 14:10 WIB</span>
+</div>
+</div>
+<!-- Verification Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Main Verification Item 1: Homestay -->
+<article class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">cottage</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Homestay Rura Silindung Asri</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">Tinjau Dokumen</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Pengelola: <strong class="text-on-surface">Ibu Kristin Nababan</strong> • ID Registrasi: <span class="font-mono text-primary font-medium">HS-TAPUT-2026-041</span>
+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+                  Lokasi: Desa Hutatoruan I, Kec. Tarutung (Zona Salib Kasih &amp; Geosite Silindung)
+                </p>
+</div>
+</div>
+<!-- Dukcapil Validation Badge -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-fixed/30 text-primary font-label-sm text-label-sm font-semibold self-start shrink-0">
+<span class="material-symbols-outlined text-[16px] text-primary-container">fingerprint</span>
+<span>NIK Terverifikasi Dukcapil</span>
+</div>
+</div>
+<!-- Document Inspection Mosaic -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">inventory</span>
+<span>Dokumen Bukti &amp; Legalitas Terlampir (4 Berkas):</span>
+</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Item 1 -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-primary-container">badge</span>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md text-on-surface truncate">KTP &amp; NIB Pengelola.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">12.02.04.560189.0002</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-sm text-label-sm transition-colors" onclick="openDocPreview('KTP &amp; Surat Izin Berusaha (NIB) - Kristin Nababan')" type="button">
+                  Pratinjau
+                </button>
+</div>
+<!-- Item 2 -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified_user</span>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md text-on-surface truncate">Sertifikat CHSE Kemenparekraf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status: Nilai Memuaskan (94.2)</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-sm text-label-sm transition-colors" onclick="openDocPreview('Sertifikat CHSE Kemenparekraf RI No. CHSE-TU-9921')" type="button">
+                  Pratinjau
+                </button>
+</div>
+<!-- Item 3 -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-primary-container">photo_library</span>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md text-on-surface truncate">Galeri Kamar &amp; Sanitasi Air Panas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 Foto Resolusi Tinggi</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-sm text-label-sm transition-colors" onclick="openDocPreview('Fasilitas 4 Kamar Tamu, Toilet Standar Wisata &amp; Tangki Air Panas')" type="button">
+                  Pratinjau
+                </button>
+</div>
+<!-- Item 4 -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-primary-container">description</span>
+<div class="flex flex-col truncate">
+<span class="font-label-md text-label-md text-on-surface truncate">Surat Keterangan Kades Hutatoruan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">No: 470/12/HT-I/X/2026</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-variant text-primary font-label-sm text-label-sm transition-colors" onclick="openDocPreview('Surat Rekomendasi Kepala Desa Hutatoruan I - Tarutung')" type="button">
+                  Pratinjau
+                </button>
+</div>
+</div>
+</div>
+<!-- Authority Decision Action Bar -->
+<div class="pt-space-xs flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">assignment_ind</span>
+<span>Pemeriksa Pertama: Pelita J. Silaban (Pengawas Kemitraan)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-error-container text-on-error-container font-label-md text-label-md font-bold hover:opacity-90 transition-opacity flex items-center gap-1.5" onclick="toggleRejectModal(true)" type="button">
+<span class="material-symbols-outlined text-[18px]">rule_settings</span>
+<span>Tolak / Minta Revisi Berkas</span>
+</button>
+<button class="px-5 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-md hover:bg-primary transition-all flex items-center gap-1.5" onclick="approvePartner('Homestay Rura Silindung Asri')" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Setujui &amp; Terbitkan Izin Mitra</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Right Side Verification Item 2: Pemandu Wisata + Audit Quick Info -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Guide Verification Card -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-on-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[22px]">hiking</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Menunggu Akreditasi
+              </span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Op. Daniel Hutabarat</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pemandu Geosite Sipoholon &amp; Muara Toba</p>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex flex-col gap-1 font-label-sm text-label-sm">
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">Lisensi HPI:</span>
+<span class="font-mono font-semibold">HPI-TAPUT-2026-088</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">Kompetensi:</span>
+<span>Bahasa Batak, ID, English Basic</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">SK Kadispar:</span>
+<span class="text-primary font-medium">SK-556/Pariwisata/2026</span>
+</div>
+</div>
+<div class="pt-1 flex items-center gap-2">
+<button class="w-full py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center justify-center gap-1" onclick="approvePartner('Op. Daniel Hutabarat (Pemandu HPI)')" type="button">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+<span>Verifikasi Pemandu</span>
+</button>
+</div>
+</article>
+<!-- Standard Operating Protocol Box -->
+<div class="bg-primary-container p-space-md rounded-xl text-on-primary shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">gavel</span>
+<h5 class="font-label-lg text-label-lg font-bold">Standard Operasional Akreditasi</h5>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              Setiap izin homestay dan kartu tanda pengenal pemandu lokal diterbitkan secara elektronik dengan QR anti-pemalsuan sesuai Perda Kab. Tapanuli Utara No. 04/2024 tentang Retribusi &amp; Tata Kelola Pariwisata Kawasan Danau Toba.
+            </p>
+<div class="pt-1 flex items-center justify-between font-label-sm text-label-sm text-surface-container-high">
+<span>SLA Verifikasi Dokumen:</span>
+<strong class="text-white">Maksimal 2x24 Jam Kerja</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- PANEL 2: LAPORAN PENERIMAAN PAD & PENYETORAN   -->
+<!-- ============================================== -->
+<section class="flex flex-col gap-space-md" id="panel-pad">
+<!-- Filter Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm flex-1">
+<!-- Filter 1: Destinasi -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Pilihan Kawasan Destinasi</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface rounded-lg px-3 py-2 font-label-md text-label-md appearance-none focus:outline-none">
+<option>Semua Destinasi Terpadu (12 Destinasi)</option>
+<option>Salib Kasih Siatas Barita</option>
+<option>Pemandian Air Soda Parbubu</option>
+<option>Pemandian Air Panas Sipoholon</option>
+<option>Huta Ginjang Muara</option>
+<option>Situs Salomo &amp; Salib Muara</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter 2: Periode Waktu -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Periode Pembukuan</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface rounded-lg px-3 py-2 font-label-md text-label-md appearance-none focus:outline-none">
+<option>Bulan Ini (Oktober 2026)</option>
+<option>Triwulan III (Jul - Sep 2026)</option>
+<option>Tahun Anggaran 2026 Berjalan</option>
+<option>Kustom Rentang Tanggal...</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">calendar_month</span>
+</div>
+</div>
+<!-- Filter 3: Kanal Pembayaran -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Kanal / Metode Bayar</label>
+<div class="relative">
+<select class="w-full bg-surface-container-low text-on-surface rounded-lg px-3 py-2 font-label-md text-label-md appearance-none focus:outline-none">
+<option>Semua (QRIS Bank Sumut, EDC, VA)</option>
+<option>QRIS Dinamis Bank Sumut</option>
+<option>EDC Loket Gerbang Utama</option>
+<option>Virtual Account BPD Sumut</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">payments</span>
+</div>
+</div>
+</div>
+<!-- Official Export Actions -->
+<div class="flex flex-wrap items-center gap-2 shrink-0 pt-2 lg:pt-0">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors" onclick="exportData('CSV')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">table_chart</span>
+<span>Ekspor CSV / Spreadsheet</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary flex items-center gap-1.5 shadow-sm transition-colors" onclick="exportData('PDF')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">verified</span>
+<span>Ekspor Laporan Resmi (PDF Bertandatangan Elektronik)</span>
+</button>
+</div>
+</div>
+<!-- Quick PAD Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Penyetoran PAD Kasda</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 342.850.000</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+14.8% dibanding September 2026</span>
+</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Tiket Terpadu Terjual</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">48.210 Tiket</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rata-rata 1.555 tiket / hari</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tingkat Validasi Gerbang (Turnstile)</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">98.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">47.450 pengunjung fisik terverifikasi</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status Rekonsiliasi Bank Sumut</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/40 text-primary font-label-md text-label-md font-bold">100% RECONCILED</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">No Selisih Kasda &amp; Bank</span>
+</div>
+</div>
+<!-- Financial PAD Summary Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">analytics</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Tabel Ringkasan Penerimaan per Kawasan Wisata Pemkab</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Periode: 01 Okt 2026 - 25 Okt 2026</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high/60 text-on-surface font-label-md text-label-md uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4">No</th>
+<th class="py-3 px-4">Destinasi</th>
+<th class="py-3 px-4 text-right">Tiket Terjual</th>
+<th class="py-3 px-4 text-right">Pengunjung Hadir</th>
+<th class="py-3 px-4 text-right">Tarif Rata2</th>
+<th class="py-3 px-4 text-right">Bruto (Rp)</th>
+<th class="py-3 px-4 text-right">Subsidi Wisatawan</th>
+<th class="py-3 px-4 text-right font-bold text-primary">Setoran Bersih PAD (Bank Sumut)</th>
+</tr>
+</thead>
+<tbody class="text-on-surface divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-mono text-on-surface-variant">01</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-primary">Salib Kasih Siatas Barita</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Tarutung Selatan</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">18.420</td>
+<td class="py-3.5 px-4 text-right font-mono">18.150</td>
+<td class="py-3.5 px-4 text-right font-mono">Rp 10.000</td>
+<td class="py-3.5 px-4 text-right font-mono font-medium">184.200.000</td>
+<td class="py-3.5 px-4 text-right font-mono text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">Rp 184.200.000</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 font-mono text-on-surface-variant">02</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-primary">Pemandian Air Soda Parbubu</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Tarutung Barat</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">12.140</td>
+<td class="py-3.5 px-4 text-right font-mono">11.980</td>
+<td class="py-3.5 px-4 text-right font-mono">Rp 5.000</td>
+<td class="py-3.5 px-4 text-right font-mono font-medium">60.700.000</td>
+<td class="py-3.5 px-4 text-right font-mono text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">Rp 60.700.000</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-mono text-on-surface-variant">03</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-primary">Pemandian Air Panas Sipoholon</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kecamatan Sipoholon</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">9.650</td>
+<td class="py-3.5 px-4 text-right font-mono">9.520</td>
+<td class="py-3.5 px-4 text-right font-mono">Rp 5.000</td>
+<td class="py-3.5 px-4 text-right font-mono font-medium">48.250.000</td>
+<td class="py-3.5 px-4 text-right font-mono text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">Rp 48.250.000</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 font-mono text-on-surface-variant">04</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-primary">Panorama Huta Ginjang &amp; Muara Toba</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Kawasan Geopark Kaldera Toba</div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono">8.000</td>
+<td class="py-3.5 px-4 text-right font-mono">7.800</td>
+<td class="py-3.5 px-4 text-right font-mono">Rp 6.212</td>
+<td class="py-3.5 px-4 text-right font-mono font-medium">49.700.000</td>
+<td class="py-3.5 px-4 text-right font-mono text-on-surface-variant">Rp 0</td>
+<td class="py-3.5 px-4 text-right font-mono font-bold text-primary">Rp 49.700.000</td>
+</tr>
+</tbody>
+<!-- Total Row -->
+<tfoot class="bg-primary text-on-primary font-headline-sm text-headline-sm">
+<tr>
+<td class="py-4 px-4 font-bold tracking-tight" colspan="2">TOTAL KONSOLIDASI PAD BULAN INI</td>
+<td class="py-4 px-4 text-right font-mono font-bold text-label-lg">48.210</td>
+<td class="py-4 px-4 text-right font-mono font-bold text-label-lg">47.450</td>
+<td class="py-4 px-4 text-right font-mono text-label-md text-surface-variant">-</td>
+<td class="py-4 px-4 text-right font-mono font-bold text-label-lg">Rp 342.850.000</td>
+<td class="py-4 px-4 text-right font-mono text-label-sm text-surface-variant">Rp 0</td>
+<td class="py-4 px-4 text-right font-mono font-bold text-secondary-container">
+                  Rp 342.850.000
+                </td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-high flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Semua dana disetor langsung ke Rekening Kas Umum Daerah (RKUD) PT. Bank Sumut No: 104.01.02.00019-1</span>
+</div>
+<span class="font-mono">Akuntabilitas: BPK-RI Perwakilan Prov. Sumatera Utara</span>
+</div>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- PANEL 3: LOG AUDIT SISTEM & KEAMANAN OTORITAS  -->
+<!-- ============================================== -->
+<section class="flex flex-col gap-space-md" id="panel-audit">
+<!-- Search & Audit Event Filter Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant absolute left-3 top-2.5">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container" placeholder="Cari jejak log berdasar NIP, Nama Operator, Destinasi, atau Alamat IP..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_list</span>
+<span>Semua Aksi</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors" type="button">
+            Perubahan Kuota
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors" type="button">
+            Verifikasi Mitra
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-variant transition-colors" type="button">
+            Override Palang Gerbang
+          </button>
+</div>
+</div>
+<!-- Audit Trail Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">image_search</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Jejak Waktu Nyata Aktivitas Otoritas (Immutable Audit Log)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Checksum SHA-256 Valid</span>
+</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high/60 text-on-surface font-label-md text-label-md uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4">Waktu (WIB)</th>
+<th class="py-3 px-4">Operator / Pelaksana</th>
+<th class="py-3 px-4">Tindakan Otoritas</th>
+<th class="py-3 px-4">Entitas Terkait</th>
+<th class="py-3 px-4">Rincian Perubahan (Before → After)</th>
+<th class="py-3 px-4 text-right">Jaringan &amp; Terminal</th>
+</tr>
+</thead>
+<tbody class="text-on-surface divide-y-0">
+<!-- Audit Item 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-mono text-label-sm text-on-surface-variant whitespace-nowrap">
+                  25 Okt 2026<br/><span class="font-bold text-on-surface">14:22:10</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-primary">Admin Dinas - Pelita J. Silaban</div>
+<div class="font-mono font-label-sm text-label-sm text-on-surface-variant">NIP: 19890514 201201 2 003</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-bold">
+                    Pembaruan Kuota Harian
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-on-surface">
+                  Pemandian Air Soda Parbubu
+                </td>
+<td class="py-3.5 px-4">
+<div class="font-label-sm text-label-sm text-on-surface">
+                    Kuota: <span class="line-through text-error">400</span> → <span class="font-bold text-primary">500 tiket/hari</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant italic">
+                    Dasar: Surat Rekomendasi Kadis No. 556/Dispar/X/2026 (Pekan Budaya)
+                  </div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono text-label-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">103.144.19.42</span><br/>Tarutung Dispar WAN
+                </td>
+</tr>
+<!-- Audit Item 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 font-mono text-label-sm text-on-surface-variant whitespace-nowrap">
+                  25 Okt 2026<br/><span class="font-bold text-on-surface">11:05:44</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-primary">Petugas Loket - Martua Siregar</div>
+<div class="font-mono font-label-sm text-label-sm text-on-surface-variant">ID Loket: LK-SB-01</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                    Buka Palang Darurat
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-on-surface">
+                  Turnstile Barat - Salib Kasih
+                </td>
+<td class="py-3.5 px-4">
+<div class="font-label-sm text-label-sm text-on-surface">
+                    Override Manual Gerbang #2 (Durasi 4 Menit)
+                  </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant italic">
+                    Alasan: Akses Masuk Rombongan Lansia Gereja HKBP Dame
+                  </div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono text-label-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">192.168.10.15</span><br/>Gate Siatas Barita LAN
+                </td>
+</tr>
+<!-- Audit Item 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-mono text-label-sm text-on-surface-variant whitespace-nowrap">
+                  24 Okt 2026<br/><span class="font-bold text-on-surface">16:48:32</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-primary">Supervisor - Dr. Erliyan R. Susanto</div>
+<div class="font-mono font-label-sm text-label-sm text-on-surface-variant">Otoritas Tim Riset UTI</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-primary-fixed/40 text-primary font-label-sm text-label-sm font-bold">
+                    Verifikasi Mitra Homestay
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-on-surface">
+                  Homestay Silindung Indah
+                </td>
+<td class="py-3.5 px-4">
+<div class="font-label-sm text-label-sm text-on-surface">
+                    Akreditasi Resmi: <span class="font-bold text-primary">DITERBITKAN (ID: 2026-039)</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant italic">
+                    Penerbitan Sertifikat CHSE &amp; Kunci Akses Portal Kemitraan
+                  </div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono text-label-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">180.252.12.80</span><br/>Secure VPN Tarutung
+                </td>
+</tr>
+<!-- Audit Item 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-low/20">
+<td class="py-3.5 px-4 font-mono text-label-sm text-on-surface-variant whitespace-nowrap">
+                  24 Okt 2026<br/><span class="font-bold text-on-surface">09:12:08</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-primary">Analis Keuangan - Bapenda Taput</div>
+<div class="font-mono font-label-sm text-label-sm text-on-surface-variant">NIP: 19820719 200804 1 002</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+                    Ekspor Pembukuan PAD
+                  </span>
+</td>
+<td class="py-3.5 px-4 font-medium text-on-surface">
+                  Kasda Bank Sumut (12 Destinasi)
+                </td>
+<td class="py-3.5 px-4">
+<div class="font-label-sm text-label-sm text-on-surface">
+                    Unduh Rekonsiliasi Triwulan III PDF Bertanda Tangan BSrE
+                  </div>
+<div class="font-label-sm text-label-sm text-on-surface-variant italic">
+                    Log Hash: 8bfa93...77e1 (Laporan BPK &amp; Inspektorat Daerah)
+                  </div>
+</td>
+<td class="py-3.5 px-4 text-right font-mono text-label-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">103.144.19.12</span><br/>Bapenda Kab. Taput
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Menampilkan 4 dari 1.284 catatan log terekam</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-variant" type="button">Sebelumnya</button>
+<span class="px-2 font-mono">1 / 321</span>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-variant" type="button">Berikutnya</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ============================================== -->
+<!-- MODAL: PREVIEW DOKUMEN MITRA                   -->
+<!-- ============================================== -->
+<div class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4" id="modal-doc">
+<div class="bg-surface-container-lowest max-w-2xl w-full rounded-2xl shadow-xl overflow-hidden flex flex-col">
+<div class="p-space-md bg-primary-container text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-secondary-container">visibility</span>
+<span class="font-headline-sm text-headline-sm text-white" id="doc-modal-title">Pratinjau Dokumen Berkas</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors" onclick="closeDocPreview()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Visual Mockup of Verified Civic Document -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col items-center justify-center text-center gap-space-sm">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[36px]">verified</span>
+</div>
+<div class="flex flex-col">
+<h5 class="font-headline-sm text-headline-sm text-primary">Dokumen Otentik Terverifikasi Digital</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Diterbitkan dan divalidasi silang melalui SIAK Kemendagri &amp; Portal OSS RBA Dinas Penanaman Modal Kab. Tapanuli Utara.
+            </p>
+</div>
+<div class="w-full bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between font-mono font-label-sm text-label-sm text-on-surface">
+<span>Stempel Validasi: VALID-DISPAR-2026-OKT</span>
+<span class="text-primary font-bold">STATUS: ASLI</span>
+</div>
+</div>
+<div class="flex justify-end gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" onclick="closeDocPreview()" type="button">
+            Tutup Pratinjau
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold" onclick="alert('Berkas tersimpan di cache audit')" type="button">
+            Unduh Berkas Lengkap
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- MODAL: REJECT / MINTA REVISI BERKAS MITRA      -->
+<!-- ============================================== -->
+<div class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4" id="modal-reject">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-xl overflow-hidden flex flex-col">
+<div class="p-space-md bg-error-container text-on-error-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+<span class="font-headline-sm text-headline-sm">Permintaan Revisi / Penolakan Berkas</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center transition-colors" onclick="toggleRejectModal(false)" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pilih atau tuliskan catatan perbaikan resmi untuk pengelola <strong class="text-on-surface">Homestay Rura Silindung Asri</strong>. Notifikasi SMS/WhatsApp Dinas akan terkirim secara otomatis.
+        </p>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<input checked="" class="w-4 h-4 accent-primary" type="checkbox"/>
+<span>Foto fasilitas sanitasi air panas buram atau tidak menunjukkan kebersihan standar</span>
+</label>
+<label class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<input class="w-4 h-4 accent-primary" type="checkbox"/>
+<span>Masa berlaku Sertifikat CHSE Kemenparekraf telah kedaluwarsa</span>
+</label>
+<label class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface">
+<input class="w-4 h-4 accent-primary" type="checkbox"/>
+<span>Surat Keterangan Kades belum dibubuhi stempel basah digital</span>
+</label>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Instruksi Revisi Tambahan:</label>
+<textarea class="w-full bg-surface-container-low p-2.5 rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none" placeholder="Tulis instruksi perbaikan yang jelas untuk pemohon..." rows="3"></textarea>
+</div>
+<div class="flex justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" onclick="toggleRejectModal(false)" type="button">
+            Batal
+          </button>
+<button class="px-4 py-2 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold" onclick="submitRejection()" type="button">
+            Kirim Nota Revisi ke Pengelola
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Logic -->
+<script>
+    function switchSection(target) {
+      // Hide all panels
+      document.getElementById('panel-mitra').classList.add('hidden');
+      document.getElementById('panel-pad').classList.add('hidden');
+      document.getElementById('panel-audit').classList.add('hidden');
+
+      // Reset button styles
+      const tabs = [
+        { id: 'tab-btn-mitra', name: 'mitra' },
+        { id: 'tab-btn-pad', name: 'pad' },
+        { id: 'tab-btn-audit', name: 'audit' }
+      ];
+
+      tabs.forEach(t => {
+        const btn = document.getElementById(t.id);
+        if (t.name === target) {
+          btn.className = 'tab-pill flex items-center gap-2 px-4 py-2.5 rounded-xl font-label-lg text-label-lg transition-all duration-200 bg-primary-container text-on-primary shadow-sm';
+        } else {
+          btn.className = 'tab-pill flex items-center gap-2 px-4 py-2.5 rounded-xl font-label-lg text-label-lg transition-all duration-200 bg-surface-container text-on-surface-variant hover:text-primary';
+        }
+      });
+
+      // Show selected panel
+      document.getElementById('panel-' + target).classList.remove('hidden');
+    }
+
+    function openDocPreview(docName) {
+      document.getElementById('doc-modal-title').innerText = docName;
+      document.getElementById('modal-doc').classList.remove('hidden');
+    }
+
+    function closeDocPreview() {
+      document.getElementById('modal-doc').classList.add('hidden');
+    }
+
+    function toggleRejectModal(show) {
+      const modal = document.getElementById('modal-reject');
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function approvePartner(partnerName) {
+      const confirmed = confirm('Konfirmasi persetujuan resmi untuk: ' + partnerName + '? Surat Izin Digital & QR Akreditasi akan diterbitkan langsung ke sistem.');
+      if (confirmed) {
+        alert('Izin Mitra Resmi Terbit: ' + partnerName + ' telah aktif di sistem Taput Wisata Pass.');
+      }
+    }
+
+    function submitRejection() {
+      toggleRejectModal(false);
+      alert('Nota Revisi telah dikirimkan ke kontak terdaftar mitra. Log audit otomatis diperbarui.');
+    }
+
+    function exportData(type) {
+      alert('Memproses Ekspor Laporan PAD format ' + type + ' (Dilengkapi Segel Kriptografi Dispar & Bapenda Taput)... File akan terunduh otomatis.');
+    }
+
+    // Default view: Tab 1 (Verifikasi Kemitraan)
+    switchSection('mitra');
+  </script>
+</div></main><footer class="w-full bg-[#093838] text-inverse-on-surface pt-space-xl pb-space-lg"><div class="w-full max-w-[1120px] mx-auto px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pb-space-xl border-b border-primary-container/40"><div class="bg-primary-container/30 p-space-lg rounded-xl flex items-start gap-space-md"><div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed shrink-0"><span class="material-symbols-outlined text-[28px]">account_balance</span></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-container font-bold">Badan Pelaksana Pengelola</span><h4 class="font-headline-sm text-headline-sm text-white">PEMERINTAH KAB. TAPANULI UTARA</h4><p class="font-body-sm text-body-sm text-surface-container-high">Dinas Pariwisata &amp; Kebudayaan</p><p class="font-body-sm text-body-sm text-outline-variant mt-space-xs">Pusat Administrasi &amp; Validasi Wisata Kawasan Dataran Tinggi Tapanuli Utara - Tarutung</p></div></div><div class="bg-primary-container/30 p-space-lg rounded-xl flex items-start gap-space-md"><div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed shrink-0"><span class="material-symbols-outlined text-[28px]">school</span></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary-container font-bold">Kolaborasi Riset &amp; Teknologi</span><h4 class="font-headline-sm text-headline-sm text-white">UNIVERSITAS TEKNOKRAT INDONESIA</h4><p class="font-body-sm text-body-sm text-surface-container-high">Mitra Riset Digitalisasi &amp; Smart Governance</p><p class="font-body-sm text-body-sm text-outline-variant mt-space-xs">Pengembangan Arsitektur Digital Pass Terpadu &amp; Interoperabilitas Pemerintahan Daerah</p></div></div></div><div class="pt-space-lg flex flex-col items-center justify-center text-center gap-space-xs"><p class="font-body-sm text-body-sm text-white font-medium">Copyright©2026 by Pelita Julia Silaban dan Dr. Erliyan Redy Susanto, M.Kom</p><p class="font-label-sm text-label-sm text-outline-variant">Sistem Tiket Digital Resmi &amp; Terintegrasi Kawasan Wisata Dataran Tinggi Tapanuli Utara</p></div></div></footer></body></html>

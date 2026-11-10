@@ -1,0 +1,603 @@
+<!-- Homestay & Pemandu (Mobile) -->
+<!DOCTYPE html>
+
+<html class="h-full" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ba1a1a", "primary-container": "#0f5c5c", "surface-variant": "#e1e3e2", "tertiary-container": "#7a452a", "on-secondary-fixed": "#281900", "on-secondary": "#ffffff", "surface-container-high": "#e6e9e8", "secondary": "#7f5700", "on-tertiary-fixed-variant": "#6c391f", "on-tertiary-container": "#ffb693", "on-tertiary-fixed": "#351000", "surface-container-low": "#f2f4f3", "tertiary-fixed-dim": "#ffb693", "inverse-primary": "#90d2d1", "on-primary-fixed-variant": "#004f50", "outline-variant": "#bfc8c8", "primary-fixed-dim": "#90d2d1", "tertiary": "#5e2f16", "surface-bright": "#f8faf9", "surface": "#f8faf9", "on-primary-container": "#90d2d1", "on-error-container": "#93000a", "on-secondary-container": "#6a4800", "on-surface": "#191c1c", "on-error": "#ffffff", "primary": "#004343", "surface-container-highest": "#e1e3e2", "tertiary-fixed": "#ffdbcc", "surface-container": "#eceeed", "on-background": "#191c1c", "secondary-container": "#feb316", "primary-fixed": "#aceeee", "secondary-fixed": "#ffdead", "background": "#f8faf9", "inverse-surface": "#2e3131", "secondary-fixed-dim": "#ffba3b", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#604100", "on-surface-variant": "#3f4948", "surface-tint": "#216868", "on-primary": "#ffffff", "surface-dim": "#d8dada", "inverse-on-surface": "#eff1f0", "outline": "#6f7978", "on-tertiary": "#ffffff", "on-primary-fixed": "#002020" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-tablet": "2rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xl": "2.5rem", "margin-desktop": "3rem", "gutter": "1rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-full font-body-md"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,92,92,0.06)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><span class="material-symbols-outlined text-primary-container text-[26px] shrink-0">verified_user</span><div class="flex flex-col truncate"><span class="font-headline-sm text-headline-sm text-primary-container leading-none truncate">Taput Wisata Pass</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight truncate">Beranda</span></div></div><div class="flex items-center gap-space-sm shrink-0"><div class="flex items-center bg-surface-container p-0.5 rounded-lg"><button class="min-h-[32px] px-2 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm transition-colors" type="button">ID</button><button class="min-h-[32px] px-2 rounded-md text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" type="button">EN</button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Search & Context Bar -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">holiday_village</span>
+<span class="font-headline-sm text-headline-sm text-primary-container">Homestay &amp; Pemandu</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+        Resmi Pemkab
+      </span>
+</div>
+<!-- Search Input Shell -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-xl pl-10 pr-10 py-3 shadow-[0_2px_8px_rgba(15,92,92,0.06)] focus:outline-none focus:ring-0 placeholder:text-outline" placeholder="Cari Tarutung, Muara, Sipoholon..." type="text" value="Tarutung, Danau Toba"/>
+<button aria-label="Filter" class="absolute inset-y-0 right-0 pr-3 flex items-center text-primary-container min-h-[44px] min-w-[44px] justify-center" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Dual Segmented Navigation Tabs -->
+<div class="grid grid-cols-2 p-1 bg-surface-container rounded-xl gap-1">
+<button class="flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-surface-container-lowest text-primary-container shadow-sm font-label-lg text-label-lg transition-all min-h-[44px]" id="tab-homestay" onclick="switchCategoryTab('homestay')" type="button">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+<span>Homestay</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-primary-container text-on-primary text-[10px] font-semibold leading-tight">18</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all min-h-[44px]" id="tab-pemandu" onclick="switchCategoryTab('pemandu')" type="button">
+<span class="material-symbols-outlined text-[18px]">person_pin_circle</span>
+<span>Pemandu Wisata</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-semibold leading-tight">9</span>
+</button>
+</div>
+</section>
+<!-- LISTINGS FEED -->
+<section class="px-margin flex flex-col gap-space-md mt-space-xs">
+<!-- Homestay Card 1 (Active/Selected Example) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(15,92,92,0.08)] flex flex-col">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Warm traditional Batak highland wooden homestay with carved gorga motif gables surrounded by pine trees under misty morning sun in Tarutung North Tapanuli Sumatra with neat gravel garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA334Rl0lNQ9qmFgxvKqDnEyPPZkDXsLAWbZeGULtgp3siWGf8QgMZLCgC5h7iE3zJz5rsivOsXBJj0zCd0cJbV4c9YDzSGYAYKBDI73lUxbMU0T275SCvgYD6QrNH_6zGW_XlAce1FPOvffayzuENiqqitvzqdCHhkhsvoI6LSQNDl9rEwqXOLdoS--p6WGp4sNwDddKqciZnomdPSgElW7hSxBwXwErqnD_600pY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Verified Badge Top Left -->
+<div class="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/95 backdrop-blur text-on-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Mitra Terverifikasi Dispar</span>
+</div>
+<!-- Rating Chip Top Right -->
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.9</span>
+<span class="text-on-surface-variant text-[10px]">(88)</span>
+</div>
+<!-- Bottom Tag Overlay -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+            Tarutung (dekat Salib Kasih)
+          </span>
+<span class="font-label-sm text-label-sm bg-black/40 backdrop-blur px-2 py-0.5 rounded">
+            2.1 km dari Pusat
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Homestay Rura Silindung Asri</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Kapasitas 4-6 Tamu • 2 Kamar • 2 Kamar Mandi</p>
+</div>
+</div>
+<!-- Amenities Chips -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">wifi</span> WiFi Cepat
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">bakery_dining</span> Sarapan Khas Batak
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">hot_tub</span> Air Hangat Sipoholon
+          </span>
+</div>
+<!-- Price & Action CTA -->
+<div class="flex items-center justify-between pt-space-xs mt-1 border-0">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Tarif Resmi</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary-container">Rp 250.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ malam</span>
+</div>
+</div>
+<button class="min-h-[44px] px-4 py-2.5 rounded-xl bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg font-bold shadow-sm hover:opacity-95 transition-all flex items-center gap-1.5" onclick="focusBookingForm('Homestay Rura Silindung Asri', 250000)" type="button">
+<span>Pesan Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Homestay Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(15,92,92,0.08)] flex flex-col">
+<div class="relative w-full h-44">
+<img class="w-full h-full object-cover" data-alt="Charming lakeside eco cottage in Muara North Tapanuli overlooking blue Lake Toba with traditional wooden verandah flowering bougainvillea and distant green caldera hills under afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2REeEqzynsOoVhvms4kihiIBethsaMCnIblYoRpB_wHkuOKUUDAjD-BlacZOP7JbEwIS1jAVEFXXe4KSG3ftOKsjtnVru2KyIfmoy0lJF3SUM1ERKIWdZqCKTQ1qJ4Mzg5IGAIbgIW2J9rKuaSo_IBGj-adbQJYd1eRFHFU0npkY5dv_J5tVVzLc2bgjdWhkl3SAdLCfcVqPeNVRBgVtpQUeK-vblobdsnOU3_mU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/95 backdrop-blur text-on-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Mitra Terverifikasi Dispar</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.8</span>
+<span class="text-on-surface-variant text-[10px]">(64)</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">water</span>
+            Muara, Tepi Danau Toba
+          </span>
+<span class="font-label-sm text-label-sm bg-black/40 backdrop-blur px-2 py-0.5 rounded">
+            Pemandangan Danau
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Toba View Eco-Cottage Muara</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Kapasitas 3 Tamu • 1 Bungalow • Dermaga Pribadi</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">kayaking</span> Sewa Kano
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">coffee</span> Kopi Lintong
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">nature_people</span> Eco-Friendly
+          </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Tarif Resmi</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary-container">Rp 320.000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ malam</span>
+</div>
+</div>
+<button class="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-container-high text-primary-container font-label-lg text-label-lg font-bold hover:bg-surface-variant transition-all flex items-center gap-1.5" onclick="focusBookingForm('Toba View Eco-Cottage Muara', 320000)" type="button">
+<span>Pilih Kamar</span>
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Pemandu Wisata Spotlight Card -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_4px_16px_-2px_rgba(15,92,92,0.08)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+          Pemandu Budaya Terakreditasi
+        </span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          5.0 (42 ulasan)
+        </span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portrait of an experienced friendly warm Batak male tour guide in his late forties wearing traditional ulos shoulder cloth and government credential badge smiling proudly in Tarutung outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqBfJv1z0MLrjEEZCN2AiwItiWVgW2d1I9RJjgkZd7F5IK3XfhNDJR6hzkVHuH0hJIRgkIUUHhNkvtva4e0Dt_IFX6McOUYG1cv0Z0aUpLvlsA6FBlF7NyiVEHWNZvlwtpCUiPME16q31nJEC9iisEmDMqZ9C3tT5H8vfFGJ3lFeacQ0F-1is6MqEjzpT3HSPjvm22anle7ZSTk_S3Mp71OqMJDNKgKKXReP1zdQM"/>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Op. Daniel Hutabarat</h4>
+<span class="material-symbols-outlined text-primary-container text-[18px] shrink-0" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Pemandu Budaya &amp; Geosite Silindung</p>
+<p class="font-label-sm text-label-sm text-primary-container mt-0.5">Sertifikasi Resmi HPI &amp; Dispar Taput</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">groups</span>
+<span>Maks. 10 Peserta</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">translate</span>
+<span>Batak, Indo, English</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tarif Pendampingan</span>
+<p class="font-headline-sm text-headline-sm text-primary-container leading-none">Rp 175.000 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">/ hari</span></p>
+</div>
+<button class="min-h-[44px] px-3.5 py-2 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg hover:opacity-90 transition-all flex items-center gap-1" onclick="focusBookingForm('Pemandu Budaya: Op. Daniel Hutabarat', 175000)" type="button">
+<span>Pesan Pemandu</span>
+<span class="material-symbols-outlined text-[18px]">hiking</span>
+</button>
+</div>
+</article>
+</section>
+<!-- RESERVATION BOOKING FORM SHEET -->
+<section class="px-margin mt-space-lg flex flex-col gap-space-sm" id="form-reservasi">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_8px_24px_rgba(15,92,92,0.08)] flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Form Reservasi Mitra Resmi</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-0.5" id="form-selected-title">Homestay Rura Silindung Asri</h3>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm font-semibold">
+          Sistem Terintegrasi
+        </span>
+</div>
+<!-- Date Range Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Rentang Tanggal Reservasi</span>
+<span class="text-primary-container font-semibold">2 Malam</span>
+</label>
+<div class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary-container text-[20px]">calendar_today</span>
+<div class="flex-1 font-body-sm text-body-sm font-semibold">
+            25 Okt 2026 — 27 Okt 2026
+          </div>
+<button class="text-primary-container font-label-sm text-label-sm underline min-h-[44px] flex items-center" type="button">
+            Ubah
+          </button>
+</div>
+</div>
+<!-- Guest Stepper -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">person</span>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface">Jumlah Tamu</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Kapasitas maksimal 6 orang</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="Kurang" class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center font-bold text-lg hover:bg-surface-variant min-h-[44px] min-w-[44px]" onclick="adjustGuest(-1)" type="button">-</button>
+<span class="font-headline-sm text-headline-sm text-on-surface min-w-[20px] text-center" id="guest-count">3</span>
+<button aria-label="Tambah" class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-lg hover:opacity-90 min-h-[44px] min-w-[44px]" onclick="adjustGuest(1)" type="button">+</button>
+</div>
+</div>
+<!-- Special Notes Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="reservation-notes">
+          Catatan / Permintaan Khusus <span class="text-on-surface-variant font-normal">(opsional)</span>
+</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-xl p-3 placeholder:text-outline focus:outline-none resize-none" id="reservation-notes" placeholder="Cth: Jemput di Bandara Silangit, butuh makanan tanpa kacang, sewa gitar Batak..." rows="2"></textarea>
+</div>
+<!-- Transparent Breakdown -->
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col gap-2">
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span id="cost-calc-text">2 Malam x Rp 250.000</span>
+<span class="text-on-surface font-semibold" id="cost-subtotal">Rp 500.000</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+            Biaya Layanan Pemkab Taput
+            <span class="material-symbols-outlined text-[14px] text-primary">info</span>
+</span>
+<span class="text-primary-container font-semibold">Rp 0 (Disubsidi)</span>
+</div>
+<div class="pt-2 flex justify-between items-baseline text-on-surface">
+<span class="font-label-lg text-label-lg font-bold">Total Pembayaran</span>
+<span class="font-headline-sm text-headline-sm text-primary-container" id="cost-total">Rp 500.000</span>
+</div>
+</div>
+<!-- Submit Reservation Action -->
+<button class="w-full min-h-[48px] py-3 px-4 rounded-xl bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg font-bold shadow-md hover:brightness-105 active:scale-[0.99] transition-all flex items-center justify-center gap-2" onclick="submitReservationDemo()" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Kirim Pesanan Reservasi</span>
+</button>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant">
+        Pembayaran diverifikasi aman melalui Taput Wisata Pass &amp; Bank Sumut
+      </p>
+</div>
+</section>
+<!-- BOOKING STATUS STAGES VISUALIZER -->
+<section class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[20px]">history_edu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Status Pemesanan Anda</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Simulasi 4 Tahap</span>
+</div>
+<!-- State Switcher Pills -->
+<div class="grid grid-cols-4 p-1 bg-surface-container rounded-xl gap-1">
+<button class="py-1.5 px-1 rounded-lg bg-surface-container-lowest text-primary-container font-label-sm text-label-sm font-semibold shadow-sm text-center truncate min-h-[44px]" id="stage-btn-1" onclick="showStage(1)" type="button">
+        1. Menunggu
+      </button>
+<button class="py-1.5 px-1 rounded-lg text-on-surface-variant font-label-sm text-label-sm text-center truncate hover:text-on-surface min-h-[44px]" id="stage-btn-2" onclick="showStage(2)" type="button">
+        2. Diterima
+      </button>
+<button class="py-1.5 px-1 rounded-lg text-on-surface-variant font-label-sm text-label-sm text-center truncate hover:text-on-surface min-h-[44px]" id="stage-btn-3" onclick="showStage(3)" type="button">
+        3. Ditolak
+      </button>
+<button class="py-1.5 px-1 rounded-lg text-on-surface-variant font-label-sm text-label-sm text-center truncate hover:text-on-surface min-h-[44px]" id="stage-btn-4" onclick="showStage(4)" type="button">
+        4. Kedaluwarsa
+      </button>
+</div>
+<!-- Active Stage Visual Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_16px_rgba(15,92,92,0.06)] flex flex-col gap-space-sm transition-all">
+<!-- Header of the Ticket Demo -->
+<div class="flex items-center justify-between pb-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">No. Booking</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">#TPT-2026-8812</span>
+</div>
+<div id="status-badge-container">
+<!-- Dynamic Chip Injected via Script -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold animate-pulse">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Menunggu Konfirmasi
+          </span>
+</div>
+</div>
+<!-- Property Mini Row -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Homestay Rura Silindung Asri</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Check-in: 25 Okt 2026 • 2 Malam</p>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-primary-container">Rp 500.000</span>
+</div>
+<!-- Stage Specific Body Details -->
+<div class="p-3.5 rounded-xl bg-secondary-fixed/30 flex flex-col gap-2" id="stage-detail-box">
+<div class="flex items-center justify-between text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+            Batas Respon Mitra
+          </span>
+<span class="font-mono font-bold bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">01:45:00 tersisa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Permintaan Anda telah dikirimkan ke pengelola homestay. Notifikasi SMS &amp; WhatsApp resmi akan dikirim seketika setelah disetujui.
+        </p>
+</div>
+<!-- Dynamic Action Button per Status -->
+<div id="stage-action-box">
+<button class="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Hubungi Pengelola via WA</span>
+</button>
+</div>
+</div>
+</section>
+<!-- OFFICIAL CIVIC FOOTER -->
+<footer class="mt-space-xl pt-space-lg px-margin flex flex-col items-center gap-space-md bg-surface-container-high/60 rounded-3xl mx-space-xs text-center pb-6">
+<!-- Institutional Partner Logos -->
+<div class="flex items-center justify-center gap-space-lg">
+<!-- Pemkab Tapanuli Utara Logo Shell -->
+<div class="flex flex-col items-center gap-1 max-w-[140px]">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shadow-sm p-1.5">
+<span class="material-symbols-outlined text-primary-container text-[28px]" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-tight">Pemkab Tapanuli Utara</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] leading-none">Dinas Pariwisata</span>
+</div>
+<div class="w-px h-10 bg-outline-variant/40"></div>
+<!-- Universitas Teknokrat Indonesia Logo Shell -->
+<div class="flex flex-col items-center gap-1 max-w-[140px]">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shadow-sm p-1.5">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-tight">Univ. Teknokrat Indonesia</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] leading-none">Riset Digitalisasi</span>
+</div>
+</div>
+<!-- Official Help Center & Hotlines -->
+<div class="w-full flex items-center justify-around py-2 px-3 rounded-xl bg-surface-container-lowest shadow-sm text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">support_agent</span>
+<span>Pusat Bantuan 24/7</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">phone_in_talk</span>
+<span>(0633) 21102 Tarutung</span>
+</div>
+</div>
+<!-- Verbatim Copyright -->
+<div class="flex flex-col gap-1 pt-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium">
+        Copyright©2026 by Pelita Julia Silaban dan Dr. Erliyan Redy Susanto, M.Kom
+      </p>
+<p class="font-label-sm text-label-sm text-outline text-[10px]">
+        Taput Wisata Pass • Inovasi Destinasi Cerdas Tapanuli Utara • v2.4.1
+      </p>
+</div>
+</footer>
+</div>
+<script>
+  let currentGuestCount = 3;
+  let activeDailyRate = 250000;
+  const nightsCount = 2;
+
+  function switchCategoryTab(category) {
+    const homestayTab = document.getElementById('tab-homestay');
+    const pemanduTab = document.getElementById('tab-pemandu');
+    
+    if (category === 'homestay') {
+      homestayTab.className = "flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-surface-container-lowest text-primary-container shadow-sm font-label-lg text-label-lg transition-all min-h-[44px]";
+      pemanduTab.className = "flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all min-h-[44px]";
+    } else {
+      pemanduTab.className = "flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-surface-container-lowest text-primary-container shadow-sm font-label-lg text-label-lg transition-all min-h-[44px]";
+      homestayTab.className = "flex items-center justify-center gap-1.5 py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-all min-h-[44px]";
+    }
+  }
+
+  function adjustGuest(delta) {
+    currentGuestCount = Math.max(1, Math.min(8, currentGuestCount + delta));
+    const guestEl = document.getElementById('guest-count');
+    if (guestEl) guestEl.innerText = currentGuestCount;
+  }
+
+  function focusBookingForm(title, rate) {
+    activeDailyRate = rate;
+    const titleEl = document.getElementById('form-selected-title');
+    const calcEl = document.getElementById('cost-calc-text');
+    const subtotalEl = document.getElementById('cost-subtotal');
+    const totalEl = document.getElementById('cost-total');
+    
+    if (titleEl) titleEl.innerText = title;
+    const total = rate * nightsCount;
+    const formattedRate = 'Rp ' + rate.toLocaleString('id-ID');
+    const formattedTotal = 'Rp ' + total.toLocaleString('id-ID');
+    
+    if (calcEl) calcEl.innerText = `${nightsCount} Malam x ${formattedRate}`;
+    if (subtotalEl) subtotalEl.innerText = formattedTotal;
+    if (totalEl) totalEl.innerText = formattedTotal;
+
+    const formEl = document.getElementById('form-reservasi');
+    if (formEl) {
+      formEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function submitReservationDemo() {
+    showStage(1);
+    const target = document.getElementById('stage-detail-box');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function showStage(stageNumber) {
+    // Reset buttons
+    for (let i = 1; i <= 4; i++) {
+      const btn = document.getElementById('stage-btn-' + i);
+      if (btn) {
+        if (i === stageNumber) {
+          btn.className = "py-1.5 px-1 rounded-lg bg-surface-container-lowest text-primary-container font-label-sm text-label-sm font-bold shadow-sm text-center truncate min-h-[44px]";
+        } else {
+          btn.className = "py-1.5 px-1 rounded-lg text-on-surface-variant font-label-sm text-label-sm text-center truncate hover:text-on-surface min-h-[44px]";
+        }
+      }
+    }
+
+    const badgeContainer = document.getElementById('status-badge-container');
+    const detailBox = document.getElementById('stage-detail-box');
+    const actionBox = document.getElementById('stage-action-box');
+
+    if (!badgeContainer || !detailBox || !actionBox) return;
+
+    if (stageNumber === 1) {
+      // 1. Menunggu Konfirmasi
+      badgeContainer.innerHTML = `
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold animate-pulse">
+          <span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Menunggu Konfirmasi
+        </span>
+      `;
+      detailBox.className = "p-3.5 rounded-xl bg-secondary-fixed/30 flex flex-col gap-2";
+      detailBox.innerHTML = `
+        <div class="flex items-center justify-between text-on-secondary-fixed font-label-sm text-label-sm">
+          <span class="flex items-center gap-1 font-semibold">
+            <span class="material-symbols-outlined text-[16px]">schedule</span>
+            Batas Respon Mitra
+          </span>
+          <span class="font-mono font-bold bg-surface-container-lowest px-2 py-0.5 rounded shadow-sm">01:45:00 tersisa</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Permintaan Anda telah dikirimkan ke pengelola homestay. Notifikasi SMS &amp; WhatsApp resmi akan dikirim seketika setelah disetujui.
+        </p>
+      `;
+      actionBox.innerHTML = `
+        <button type="button" class="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>Hubungi Pengelola via WA</span>
+        </button>
+      `;
+    } else if (stageNumber === 2) {
+      // 2. Diterima (Approved)
+      badgeContainer.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">
+          <span class="material-symbols-outlined text-[16px]">check_circle</span>
+          Diterima Pengelola
+        </span>
+      `;
+      detailBox.className = "p-3.5 rounded-xl bg-primary-fixed/30 flex flex-col gap-2";
+      detailBox.innerHTML = `
+        <div class="flex items-center justify-between text-primary font-label-sm text-label-sm">
+          <span class="flex items-center gap-1 font-bold">
+            <span class="material-symbols-outlined text-[16px]">task_alt</span>
+            Kamar Telah Dikunci
+          </span>
+          <span class="bg-primary-container text-on-primary px-2 py-0.5 rounded font-semibold text-[11px]">Siap Bayar DP</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Bagus! Pengelola telah menyetujui reservasi Anda. Selesaikan pembayaran DP / Tiket Masuk Terpadu dalam 30 menit agar kamar tidak dilepas.
+        </p>
+      `;
+      actionBox.innerHTML = `
+        <button type="button" class="w-full min-h-[48px] py-3 px-4 rounded-xl bg-secondary-container text-on-secondary-fixed font-label-lg text-label-lg font-bold shadow-md flex items-center justify-center gap-1.5 hover:brightness-105">
+          <span class="material-symbols-outlined text-[20px]">payments</span>
+          <span>Lanjut Bayar DP / Tiket (Rp 500.000)</span>
+        </button>
+      `;
+    } else if (stageNumber === 3) {
+      // 3. Ditolak (Rejected)
+      badgeContainer.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+          <span class="material-symbols-outlined text-[16px]">cancel</span>
+          Ditolak Mitra
+        </span>
+      `;
+      detailBox.className = "p-3.5 rounded-xl bg-error-container/40 flex flex-col gap-2";
+      detailBox.innerHTML = `
+        <div class="flex items-center justify-between text-on-error-container font-label-sm text-label-sm">
+          <span class="flex items-center gap-1 font-bold">
+            <span class="material-symbols-outlined text-[16px]">info</span>
+            Alasan Penolakan
+          </span>
+          <span class="font-semibold text-error">Kapasitas Penuh</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          "Kamar penuh pada tanggal tersebut karena ada rombongan pesta adat silindung." Jangan khawatir, dana garansi Anda tidak dipotong.
+        </p>
+      `;
+      actionBox.innerHTML = `
+        <button type="button" onclick="switchCategoryTab('homestay')" class="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-surface-container-high text-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-[18px]">travel_explore</span>
+          <span>Cari Alternatif Homestay Sekitar</span>
+        </button>
+      `;
+    } else if (stageNumber === 4) {
+      // 4. Kedaluwarsa (Expired)
+      badgeContainer.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold">
+          <span class="material-symbols-outlined text-[16px]">hourglass_disabled</span>
+          Kedaluwarsa
+        </span>
+      `;
+      detailBox.className = "p-3.5 rounded-xl bg-surface-container flex flex-col gap-2";
+      detailBox.innerHTML = `
+        <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+          <span class="flex items-center gap-1 font-semibold">
+            <span class="material-symbols-outlined text-[16px]">timer_off</span>
+            Batas Respon Terlewati
+          </span>
+          <span class="font-mono text-[11px] bg-surface-variant px-2 py-0.5 rounded">Otomatis Dibatalkan</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          Batas respon 24 jam terlewati oleh mitra. Permintaan otomatis dihentikan oleh sistem untuk menjaga kenyamanan perjalanan Anda.
+        </p>
+      `;
+      actionBox.innerHTML = `
+        <button type="button" onclick="focusBookingForm('Toba View Eco-Cottage Muara', 320000)" class="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5">
+          <span class="material-symbols-outlined text-[18px]">restart_alt</span>
+          <span>Kirim Ulang atau Pilih Mitra Lain</span>
+        </button>
+      `;
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,92,92,0.08)]" data-active-classes="text-primary-container font-semibold"><div class="grid grid-cols-5 items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="paket" href="#"><span class="material-symbols-outlined text-[24px]">explore</span><span class="font-label-sm text-label-sm">Paket</span></a><a class="flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="tiket-saya" href="#"><span class="material-symbols-outlined text-[24px]">confirmation_number</span><span class="font-label-sm text-label-sm">Tiket Saya</span></a><a class="flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="homestay-&amp;-pemandu" href="#"><span class="material-symbols-outlined text-[24px]">holiday_village</span><span class="font-label-sm text-label-sm truncate max-w-[68px]">Homestay</span></a><a class="flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="akun" href="#"><span class="material-symbols-outlined text-[24px]">manage_accounts</span><span class="font-label-sm text-label-sm">Akun</span></a></div></nav></body></html>
